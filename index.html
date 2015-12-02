@@ -1,299 +1,223 @@
-
- <!DOCTYPE HTML>
-<html lang="zh-CN">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   
-    <title>loseblue的博客</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
-    
-    <meta name="author" content="loseblue">
-    
-
-    
-    <meta name="description">
+  <title>loseblue&#39;s blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description">
 <meta property="og:type" content="website">
-<meta property="og:title" content="loseblue的博客">
+<meta property="og:title" content="loseblue's blog">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="loseblue的博客">
+<meta property="og:site_name" content="loseblue's blog">
 <meta property="og:description">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="loseblue的博客">
+<meta name="twitter:title" content="loseblue's blog">
 <meta name="twitter:description">
-
-    
-    <link rel="alternative" href="/atom.xml" title="loseblue的博客" type="application/atom+xml">
-    
-    
-    <link rel="icon" href="/img/favicon.ico">
-    
-    
-    <link rel="apple-touch-icon" href="/img/jacman.jpg">
-    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
-    
-    <link rel="stylesheet" href="/css/style.css" type="text/css">
-</head>
-
-  <body>
-    <header>
-      
-<div>
-		
-			<div id="imglogo">
-				<a href="/"><img src="/img/logo.png" alt="loseblue的博客" title="loseblue的博客"/></a>
-			</div>
-			
-			<div id="textlogo">
-				<h1 class="site-name"><a href="/" title="loseblue的博客">loseblue的博客</a></h1>
-				<h2 class="blog-motto"></h2>
-			</div>
-			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
-			</a></div>
-			<nav class="animated">
-				<ul>
-					<ul>
-					 
-						<li><a href="/">Home</a></li>
-					
-						<li><a href="/archives">Archives</a></li>
-					
-						<li><a href="/about">About</a></li>
-					
-					<li>
- 					
-					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
-						<label>Search</label>
-						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
-						<input type="hidden" name="q" value="site:yoursite.com">
-					</form>
-					
-					</li>
-				</ul>
-			</nav>			
-</div>
-    </header>
-    <div id="container">
-      <div id="main">
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2015/11/25/36-413-S1AP/" title="36.413 S1AP读书笔记" itemprop="url">36.413 S1AP读书笔记</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="loseblue" target="_blank" itemprop="author">loseblue</a>
-		
-  <p class="article-time">
-    <time datetime="2015-11-25T07:17:02.000Z" itemprop="datePublished"> 发表于 11-25-2015</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <h1 id="书名">书名</h1><p>3GPP TS 36.413  V9.8.0 S1 Application Protocol (S1AP)</p>
-<h1 id="第一阶段">第一阶段</h1><h2 id="分类">分类</h2><blockquote>
-<blockquote>
-<p>确定书的种类和分类</p>
-</blockquote>
-</blockquote>
-<p>3GPP协议文档</p>
-<h2 id="中心思想">中心思想</h2><blockquote>
-<blockquote>
-<p>整本书在谈什么</p>
-</blockquote>
-</blockquote>
-<p>S1AP相关信息。 Services, functions, procedures, elements etc.</p>
-<h2 id="提纲">提纲</h2><blockquote>
-<blockquote>
-<p>按照顺序与关系，列出全书的重要部分。将全书的纲要拟出来之后，再将各部分的纲要也一一列出。</p>
-</blockquote>
-</blockquote>
-<h3 id="S1AP_Services">S1AP Services</h3><h3 id="S1AP_General">S1AP General</h3><h3 id="Functions_of_S1AP">Functions of S1AP</h3><h3 id="S1AP_Procedures">S1AP Procedures</h3><ol>
-<li><p>E-RAB management function</p>
-<ol>
-<li>E-RAB Setup<br>The purpose of the E-RAB Setup procedure is to assign resources on Uu and S1 for one or several E-RABs and to setup corresponding Data Radio Bearers for a given UE. The procedure uses UE-associated signalling.</li>
-<li>E-RAB Modify<br>The purpose of the E-RAB Modify procedure is to enable modifications of already established E-RABs for a given UE.  The procedure uses UE-associated signalling.</li>
-<li>E-RAB Release<br>The purpose of the E-RAB Release procedure is to enable the release of already established E-RABs for a given UE.  The procedure uses UE-associated signalling.</li>
-</ol>
-</li>
-<li><p>Initial Context Transfer function</p>
-<ol>
-<li>Initial Context Setup<br>The purpose of the Initial Context Setup procedure is to establish the necessary overall initial UE Context including E-RAB context, the Security Key, Handover Restriction List, UE Radio capability and UE Security Capabilities etc. The procedure uses UE-associated signalling.</li>
-<li>UE Context Release Request – eNB initiated<br>The purpose of the UE Context Release Request procedure is to enable the eNB to request the MME to release the UE-associated logical S1-connection due to E-UTRAN generated reason. The procedure uses UE-associated signalling.</li>
-<li>UE Context Release (MME initiated)<br>The purpose of the UE Context Release procedure is to enable the MME to order the release of the UE-associated logical connection due to various reasons, for example completion of a transaction between the UE and the EPC, or completion of successful handover, or completion of handover cancellation, or release of the old UE-associated logical S1-connection when two UE-associated logical S1-connections toward the same UE is detected after the UE has initiated the establishment of a new UE-associated logical S1-connection, or the UE is no longer allowed to access the CSG cell. The procedure uses UE-associated S1 connection.</li>
-<li>UE Context Modification<br>The purpose of the UE Context Modification procedure is to modify the established UE Context partly (e.g. with the Security Key or the Subscriber Profile ID for RAT/Frequency priority). The procedure uses UE-associated signalling.</li>
-</ol>
-</li>
-<li><p>Handover Signalling</p>
-<ol>
-<li>Handover Preparation<br>The purpose of the Handover Preparation procedure is to request the preparation of resources at the target side via the EPC. There is only one Handover Preparation procedure ongoing at the same time for a certain UE.</li>
-<li>Handover Resource Allocation<br>The purpose of the Handover Resource Allocation procedure is to reserve resources at the target eNB for the handover of a UE.</li>
-<li>Handover Notification<br>The purpose of the Handover Notification procedure is to indicate to the MME that the UE has arrived to the target cell and the S1 handover has been successfully completed.</li>
-<li>Path Switch Request<br>The purpose of the Path Switch Request procedure is to request the switch of a downlink GTP tunnel towards a new GTP tunnel endpoint.</li>
-<li>Handover Cancellation<br>The purpose of the Handover Cancel procedure is to enable a source eNB to cancel an ongoing handover preparation or an already prepared handover.</li>
-<li>eNB Status Transfer<br>The purpose of the eNB Status Transfer procedure is to transfer the uplink PDCP-SN and HFN receiver status and the downlink PDCP-SN and HFN transmitter status from the source to the target eNB via the MME during an <strong>intra LTE S1</strong> handover for each respective E-RAB for which PDCP-SN and HFN status preservation applies.</li>
-<li>MME Status Transfer<br>The purpose of the MME Status Transfer procedure is to transfer the uplink PDCP-SN and HFN receiver status and the downlink PDCP-SN and HFN transmitter status from the source to the target eNB via the MME during an <strong>S1</strong> handover for each respective E-RAB for which PDCP SN and HFN status preservation applies.</li>
-</ol>
-</li>
-<li><p>Paging<br>The purpose of the Paging procedure is to enable the MME to page a UE in the specific eNB.</p>
-</li>
-<li><p>NAS transport<br>The purpose of the NAS Transport procedure is to carry UE – MME signalling over the S1 Interface. The NAS messages are not interpreted by the eNB, and their content is outside the scope of this specification. The procedure may use an existing UE-associated logical S1-connection. If no UE-associated logical S1-connection exists, the establishment of the UE-associated logical S1-connection is initiated (and may be established) as part of the procedure.<br>The NAS messages are transported in an IE of the INITIAL UE MESSAGE, DOWNLINK NAS TRANSPORT or UPLINK NAS TRANSPORT messages.</p>
-<ol>
-<li>Initial UE Message</li>
-<li>DOWNLINK NAS TRANSPORT</li>
-<li>UPLINK NAS TRANSPORT</li>
-<li>NAS NON DELIVERY INDICATION</li>
-</ol>
-</li>
-<li>Management procedures<ol>
-<li>Reset<br>eNB &lt;–&gt; MME<br>The purpose of the Reset procedure is to initialise or re-initialise the E-UTRAN, or part of E-UTRAN S1AP UE-related contexts, in the event of a failure in the EPC or vice versa.<br>The procedure uses non-UE associated signalling.</li>
-<li>Error Indication<br>eNB &lt;–&gt; MME<br>The Error Indication procedure is initiated by a node to report detected errors in one incoming message, provided they cannot be reported by an appropriate failure message.<br>If the error situation arises due to reception of a message utilising UE associated signalling, then the Error Indication procedure uses UE associated signalling. Otherwise the procedure uses non-UE associated signalling.</li>
-<li>S1 Setup<br>The purpose of the S1 Setup procedure is to exchange application level data needed for the eNB and MME to interoperate correctly on the S1 interface. This procedure shall be the first S1AP procedure triggered after the TNL association has become operational. The procedure uses non-UE associated signalling.<br>This procedure erases any existing application level configuration data in the two nodes and replaces it by the one received.</li>
-<li>eNB Configuration Update<br>eNB –&gt; MME<br>The purpose of the eNB Configuration Update procedure is to update application level configuration data needed for the eNB and MME to interoperate correctly on the S1 interface. This procedure does not affect existing UE-related contexts, if any.</li>
-<li>MME Configuration Update<br>eNB &lt;– MME<br>The purpose of the MME Configuration Update procedure is to update application level configuration data needed for the eNB and MME to interoperate correctly on the S1 interface. This procedure does not affect existing UE-related contexts, if any.</li>
-<li>Overload Start<br>eNB &lt;– MME<br>The purpose of the Overload Start procedure is to inform an eNB to reduce the signalling load towards the concerned MME.<br>The procedure uses non-UE associated signalling.</li>
-<li>Overload Stop<br>eNB &lt;– MME<br>The purpose of the Overload Stop procedure is to signal to an eNB the MME is connected to that the overload situation at the MME has ended and normal operation shall resume.<br>The procedure uses non-UE associated signalling.</li>
-</ol>
-</li>
-<li>S1 CDMA2000 Tunneling Procedures<br>The purpose of S1 CDMA2000 Tunneling procedures is to carry CDMA2000 signalling between UE and CDMA2000 RAT over the S1 Interface.</li>
-<li>UE Capability Info Indication<br>eNB –&gt; MME<br>The purpose of the UE Capability Info Indication procedure is to enable the eNB to provide to the MME UE capability-related information.</li>
-<li>Trace Procedures<ol>
-<li>Trace Start<br>eNB &lt;– MME<br>The purpose of the Trace Start procedure is to allow the MME to request the eNB to start a trace session for a UE in ECM_CONNECTED mode. The procedure uses UE-associated signalling.<br>If no UE-associated logical S1-connection exists, the UE-associated logical S1-connection shall be established as part of the procedure.</li>
-<li>Trace Failure Indication<br>eNB –&gt; MME<br>The purpose of the Trace Failure Indication procedure is to allow the eNB to inform the MME that a Trace Start procedure or a Deactivate Trace procedure has failed due to an interaction with a handover procedure. The procedure uses UE-associated signalling.</li>
-<li>Deactivate Trace<br>eNB &lt;– MME<br>The purpose of the Deactivate Trace procedure is to allow the MME to request the eNB to stop the trace session, for the indicated trace reference.</li>
-<li>Cell Traffic Trace<br>eNB –&gt; MME<br>The purpose of the Cell Traffic Trace procedure is to send the allocated Trace Recording Session Reference and the Trace Reference to MME. The procedure uses UE-associated signalling.</li>
-</ol>
-</li>
-<li>Location Reporting Procedures<ol>
-<li>Location Reporting Control<br>eNB &lt;– MME<br>The purpose of Location Reporting Control procedure is to allow the MME to request the eNB to report where the UE is currently located. The procedure uses UE-associated signalling.</li>
-<li>Location Report Failure Indication<br>eNB –&gt; MME<br>The Location Report Failure Indication procedure is initiated by an eNB in order to inform the MME that a Location Reporting Control procedure has failed due to an interaction with a handover procedure. The procedure uses UE-associated signalling.</li>
-<li>Location Report<br>eNB –&gt; MME<br>The purpose of Location Report procedure is to provide the UE’s current location to the MME. The procedure uses UE-associated signalling.</li>
-</ol>
-</li>
-<li>Warning Message Transmission Procedures<ol>
-<li>Write-Replace Warning<br>The purpose of Write-Replace Warning procedure is to start or overwrite the broadcasting of warning message.<br>The procedure uses non UE-associated signalling.</li>
-<li>Kill<br>The purpose of Kill procedure is to cancel an already ongoing broadcast of a warning message.<br>The procedure uses non UE-associated signalling.</li>
-</ol>
-</li>
-<li>eNB Direct Information Transfer<br>The purpose of the eNB Direct Information Transfer procedure is to transfer RAN information from the eNB to the MME in unacknowledged mode. The MME does not interpret the transferred RAN information.<br>This procedure uses non-UE associated signalling.</li>
-<li>MME Direct Information Transfer<br>The purpose of the MME Direct Information Transfer procedure is to transfer RAN information from the MME to the eNB in unacknowledged mode.<br>This procedure uses non-UE associated signalling.</li>
-<li>eNB Configuration Transfer<br>The purpose of the eNB Configuration Transfer procedure is to transfer RAN configuration information from the eNB to the MME in unacknowledged mode. The MME does not interpret the transferred RAN configuration information.<br>This procedure uses non-UE associated signalling.</li>
-<li>MME Configuration Transfer<br>The purpose of the MME Configuration Transfer procedure is to transfer RAN configuration information from the MME to the eNB in unacknowledged mode.<br>This procedure uses non-UE associated signalling.</li>
-<li>LPPa transport<br>The purpose of the LPPa Transport procedure is to carry LPPa signalling between eNB and E-SMLC over the S1 Interface. The procedure may use UE-associated signalling or non-UE associated signalling. The UE-associated signalling is used to support E-CID positioning of a specific UE. The non-UE associated signalling is used to obtain assistance data from an eNodeB to support OTDOA positioning for any UE.</li>
-</ol>
-<h3 id="Elements_for_S1AP_Communication">Elements for S1AP Communication</h3><ol>
-<li>Message Functional Definition and Content</li>
-<li>Information Element Definitions</li>
-<li>Message and Information Element Abstract Syntax (with ASN.1)<br>a sending entity shall construct a S1AP message according to the PDU definitions module and with the following additional rules:<ul>
-<li>IEs shall be ordered (in an IE container) in the order they appear in object set definitions.</li>
-<li>Object set definitions specify how many times IEs may appear. An IE shall appear exactly once if the presence field in an object has value “mandatory”. An IE may appear at most once if the presence field in an object has value “optional” or “conditional”. If in a tabular format there is multiplicity specified for an IE (i.e. an IE list) then in the corresponding ASN.1 definition the list definition is separated into two parts. The first part defines an IE container list where the list elements reside. The second part defines list elements. The IE container list appears as an IE of its own. For this version of the standard an IE container list may contain only one kind of list elements.</li>
-</ul>
-</li>
-</ol>
-<h3 id="Handling_of_Unknown,_Unforeseen_and_Erroneous_Protocol_Data">Handling of Unknown, Unforeseen and Erroneous Protocol Data</h3><p>Protocol Error cases can be divided into three classes:</p>
-<ul>
-<li>Transfer Syntax Error.</li>
-<li>Abstract Syntax Error.</li>
-<li>Logical Error.</li>
-</ul>
-<h2 id="问题">问题</h2><blockquote>
-<blockquote>
-<p>作者在问的问题，或者作者想要解决的问题。</p>
-</blockquote>
-</blockquote>
-<h1 id="第二阶段">第二阶段</h1><h2 id="关键字">关键字</h2><blockquote>
-<blockquote>
-<p>诠释作者使用的关键字，与作者达成共识</p>
-</blockquote>
-</blockquote>
-<h2 id="重要句子">重要句子</h2><blockquote>
-<blockquote>
-<p>从重要的句子中抓出主旨</p>
-</blockquote>
-</blockquote>
-<ol>
-<li><p>S1AP provides the signalling service between E-UTRAN and the EPC</p>
-</li>
-<li><p>MME 负责setting up, modifying and releasing E-RAB, eNB <strong>ONLY</strong> 负责 releasing E-RAB</p>
-<blockquote>
-<p>E-RAB management function: This overall functionality is responsible for setting up, modifying and releasing E-RABs, which are triggered by the MME The release of E-RABs may be triggered by the eNB as well.</p>
-</blockquote>
-</li>
-<li><p>The eNB shall allocate a unique eNB UE S1AP ID to be used for the UE and the eNB shall include this identity in the INITIAL UE MESSAGE message.</p>
-</li>
-<li><p>The first UL NAS message is always received in the RRC CONNECTION SETUP COMPLETE message.</p>
-</li>
-<li><p>The MME identifies the associated UE based on the MME UE S1AP ID IE.  The eNB identifies the associated UE based on the eNB UE S1AP ID IE.</p>
-</li>
-</ol>
-<h2 id="重新架构">重新架构</h2><blockquote>
-<blockquote>
-<p>找出作者的论述，重新架构这些论述的前因后果，以明白作者的主张。</p>
-</blockquote>
-</blockquote>
-<h2 id="确定问题">确定问题</h2><blockquote>
-<blockquote>
-<p>确定作者已经解决了哪些问题，还有哪些问题是未解决的。在未解决的问题中，哪些是作者认为自己无法解决的。</p>
-</blockquote>
-</blockquote>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-  <div class="article-tags">
   
-  <span></span> <a href="/tags/LTE/">LTE</a><a href="/tags/S1AP/">S1AP</a>
-  </div>
+    <link rel="alternative" href="/atom.xml" title="loseblue&#39;s blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="null" class="js-avatar">
+			
+		</a>
 
-</div>
+		<hgroup>
+		  <h1 class="header-author"><a href="/">loseblue</a></h1>
+		</hgroup>
 
-
-
-
-<div class="comments-count">
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2015/08/20/hello-world/" title="Hello World" itemprop="url">Hello World</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="loseblue" target="_blank" itemprop="author">loseblue</a>
 		
-  <p class="article-time">
-    <time datetime="2015-08-20T06:30:09.000Z" itemprop="datePublished"> 发表于 08-20-2015</time>
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="/#" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="/#" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="/#" title="rss">rss</a>
+					        
+								<a class="zhihu" target="_blank" href="/#" title="zhihu">zhihu</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/LTE/" style="font-size: 10px;">LTE</a> <a href="/tags/S1AP/" style="font-size: 10px;">S1AP</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">奥巴马的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">卡卡的美丽传说</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">本泽马的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">吉格斯的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">习大大大不同</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">托蒂的博客</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+				
+				<section class="switch-part switch-part4">
+				
+					<div id="js-aboutme">我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">loseblue</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="null" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author">loseblue</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="/#" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="/#" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="/#" title="rss">rss</a>
+			        
+						<a class="zhihu" target="_blank" href="/#" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap">
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/12/01/hello-world/" class="article-date">
+  	<time datetime="2015-12-01T06:41:27.000Z" itemprop="datePublished">12-01-2015</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
     
-  </p>
-</header>
-    <div class="article-content">
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
         
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/12/01/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
         <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
 <h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 <p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
@@ -304,465 +228,276 @@
 <h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
 
-        
-        
-        <p class="article-more-link">
-          
-       </p>
+      
     </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
     
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
     
-      <a href="/2015/08/19/test-3/" title="test 3" itemprop="url">test 3</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="loseblue" target="_blank" itemprop="author">loseblue</a>
-		
-  <p class="article-time">
-    <time datetime="2015-08-19T06:16:36.000Z" itemprop="datePublished"> 发表于 08-19-2015</time>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-36-413-S1AP" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/11/25/36-413-S1AP/" class="article-date">
+  	<time datetime="2015-11-25T07:17:02.000Z" itemprop="datePublished">11-25-2015</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
     
-  </p>
-</header>
-    <div class="article-content">
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
         
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/11/25/36-413-S1AP/">36.413 S1AP读书笔记</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="书名">书名</h1><p>3GPP TS 36.413  V9.8.0 S1 Application Protocol (S1AP)</p>
+<h1 id="第一阶段">第一阶段</h1><h2 id="分类">分类</h2><blockquote>
+<p>确定书的种类和分类</p>
+</blockquote>
+<p>3GPP协议文档</p>
+<h2 id="中心思想">中心思想</h2><blockquote>
+<p>整本书在谈什么</p>
+</blockquote>
+<p>S1AP相关信息。 Services, functions, procedures, elements etc.</p>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/LTE/">LTE</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/S1AP/">S1AP</a></li></ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a  href="/2015/11/25/36-413-S1AP/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-test-3" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/08/19/test-3/" class="article-date">
+  	<time datetime="2015-08-19T06:16:36.000Z" itemprop="datePublished">08-19-2015</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/08/19/test-3/">test 3</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
         <p>this is a test for depoly to github.</p>
+<p>this is a test for plantuml</p>
+<img src="http://www.plantuml.com/plantuml/svg/Syp9J4vLqBLJSCfFib9mB2t9ICqhoKnEBCdCprC8IYqiJIqkuGBAAUW2rJY256DHLLoGdrUSokM8QbPUFb1PaK8YTZCXYcrqTI6g4t6fXfWD0000">
 
-        
-        
-        <p class="article-more-link">
-          
-       </p>
+      
     </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/test/">test</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
     
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2015/08/18/twice_test/" title="second test" itemprop="url">second test</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="loseblue" target="_blank" itemprop="author">loseblue</a>
-		
-  <p class="article-time">
-    <time datetime="2015-08-18T04:22:27.000Z" itemprop="datePublished"> 发表于 08-18-2015</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <div class="sect1">
-<h2 id="__">系统信息</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="___2">概述</h3>
-<div class="paragraph">
-<p>LTE系统内分为MIB和SIB系列消息, 对于UE当新接入一个小区或广播消息发生改变时, 都会接收系统信息(MIB\SIB), 以帮助更新或纠正UE当前的状态, 完成相应的通信业务和物理过程. 在系统路测中可以观察的系统信息有种: MIB, SIB1和SI, 其作用分别如下.</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>MIB:用于系统接入. MIB上传输几个比较重要的系统信息参数, 如小区下行带宽, PHICH配置参数, 无线系统帧号SFN(包含SIB1消息的位置), 在PBCH上发送, 表现为"RRC_MASTER_INFO_BLOCK".</p>
-<div class="ulist">
-<ul>
-<li>
-<p>SIB2:小区内所有UE共用的无线参数配置, 其它无线参数基本配置.</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>@startuml
-Alice -&gt; Bob: Authentication Request
-Bob --&gt; Alice: Authentication Response
-Alice -&gt; Bob: Another authentication Request
-Alice &lt;-- Bob: another authentication Response
-@enduml</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>从上面可以看出来，Hexo对于AsciiDoc基本属性能解析出来，流程图没办法解析。</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>Hexo n</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>没法创建AsciiDoc类型文件，是不是还得修改。</p>
-</div>
-</div>
-</div>
-</div>
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/test/">test</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/AsciiDoc/">AsciiDoc</a><a href="/tags/Hexo/">Hexo</a><a href="/tags/test/">test</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2015/08/18/first-test/" title="first_test" itemprop="url">first_test</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="loseblue" target="_blank" itemprop="author">loseblue</a>
-		
-  <p class="article-time">
-    <time datetime="2015-08-18T04:14:30.000Z" itemprop="datePublished"> 发表于 08-18-2015</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-
-</div>
-      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
-
-<div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
-<aside class="clearfix">
-
-  
-<div class="categorieslist">
-	<p class="asidetitle">分类</p>
-		<ul>
-		
-		  
-			<li><a href="/categories/test/" title="test">test<sup>1</sup></a></li>
-		  
-		
-		</ul>
-</div>
-
-
-  
-<div class="tagslist">
-	<p class="asidetitle">标签</p>
-		<ul class="clearfix">
-		
-			
-				<li><a href="/tags/test/" title="test">test<sup>2</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/AsciiDoc/" title="AsciiDoc">AsciiDoc<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/Hexo/" title="Hexo">Hexo<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/LTE/" title="LTE">LTE<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/S1AP/" title="S1AP">S1AP<sup>1</sup></a></li>
-			
-		
-			
-		
-			
-		
-		</ul>
-</div>
-
-
-  <div class="linkslist">
-  <p class="asidetitle">友情链接</p>
-    <ul>
-        
-          <li>
-            
-            	<a href="https://weibo.com" target="_blank" title="微博">weibo</a>
-            
-          </li>
-        
-    </ul>
-</div>
-
-  
-
-
-  <div class="rsspart">
-	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
-</div>
-
-</aside>
-</div>
-    </div>
-    <footer><div id="footer" >
-	
-	<div class="line">
-		<span></span>
-		<div class="author"></div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
 	</div>
-	
-	
-	<section class="info">
-		<p> Hello ,I&#39;m loseblue. <br/>
-			This is my blog,believe it or not.</p>
-	</section>
-	 
-	<div class="social-font" class="clearfix">
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-	</div>
-			
-		
 
-		<p class="copyright">
-		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2015 
-		
-		<a href="/about" target="_blank" title="loseblue">loseblue</a>
-		
-		
-		</p>
-</div>
-</footer>
-    <script src="/js/jquery-2.0.3.min.js"></script>
-<script src="/js/jquery.imagesloaded.min.js"></script>
-<script src="/js/gallery.js"></script>
-<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+      
 
-<script type="text/javascript">
-$(document).ready(function(){ 
-  $('.navbar').click(function(){
-    $('header nav').toggleClass('shownav');
-  });
-  var myWidth = 0;
-  function getSize(){
-    if( typeof( window.innerWidth ) == 'number' ) {
-      myWidth = window.innerWidth;
-    } else if( document.documentElement && document.documentElement.clientWidth) {
-      myWidth = document.documentElement.clientWidth;
-    };
-  };
-  var m = $('#main'),
-      a = $('#asidepart'),
-      c = $('.closeaside'),
-      o = $('.openaside');
-  c.click(function(){
-    a.addClass('fadeOut').css('display', 'none');
-    o.css('display', 'block').addClass('fadeIn');
-    m.addClass('moveMain');
-  });
-  o.click(function(){
-    o.css('display', 'none').removeClass('beforeFadeIn');
-    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
-    m.removeClass('moveMain');
-  });
-  $(window).scroll(function(){
-    o.css("top",Math.max(80,260-$(this).scrollTop()));
-  });
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
   
-  $(window).resize(function(){
-    getSize(); 
-    if (myWidth >= 1024) {
-      $('header nav').removeClass('shownav');
-    }else{
-      m.removeClass('moveMain');
-      a.css('display', 'block').removeClass('fadeOut');
-      o.css('display', 'none');
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-first-test" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/08/18/first-test/" class="article-date">
+  	<time datetime="2015-08-18T04:14:30.000Z" itemprop="datePublished">08-18-2015</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
         
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/08/18/first-test/">first_test</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+  
+</div>
+      <footer id="footer">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+  </script>
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2015 loseblue
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+        <span id="busuanzi_container_site_pv">
+        本站总访问量<span id="busuanzi_value_site_pv"></span>次
+        </span>
+        <span id="busuanzi_container_site_uv">
+        本页访问量<span id="busuanzi_value_site_uv"></span>人次
+        </span>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: true,
+		isPost: false,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
     }
-  });
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
 });
 </script>
 
-
-
-
-
-
-
-
-
-
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){ 
-  $('.article-content').each(function(i){
-    $(this).find('img').each(function(){
-      if ($(this).parent().hasClass('fancybox')) return;
-      var alt = this.alt;
-      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
-      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
-    });
-    $(this).find('.fancybox').each(function(){
-      $(this).attr('rel', 'article' + i);
-    });
-  });
-  if($.fancybox){
-    $('.fancybox').fancybox();
-  }
-}); 
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 
 
-
-<!-- Analytics Begin -->
-
-
-
-
-
-<!-- Analytics End -->
-
-<!-- Totop Begin -->
-
-	<div id="totop">
-	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
-	</div>
-	<script src="/js/totop.js"></script>
-
-<!-- Totop End -->
-
-<!-- MathJax Begin -->
-<!-- mathjax config similar to math.stackexchange -->
-
-
-<!-- MathJax End -->
-
-<!-- Tiny_search Begin -->
-
-<!-- Tiny_search End -->
-
-  </body>
- </html>
+  </div>
+</body>
+</html>
