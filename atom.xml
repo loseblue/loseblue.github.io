@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[loseblue's blog]]></title>
+  
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://yoursite.com/"/>
+  <updated>2015-12-10T08:37:06.000Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name><![CDATA[loseblue]]></name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <link href="http://yoursite.com/2015/12/10/hello-world/"/>
+    <id>http://yoursite.com/2015/12/10/hello-world/</id>
+    <published>2015-12-10T08:37:06.000Z</published>
+    <updated>2015-12-10T08:37:06.000Z</updated>
+    <content type="html"><![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<a id="more"></a>
+<h2 id="Quick Start">Quick Start</h2><h3 id="Create a new post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate static files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy to remote sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Welcome to <a href="http://hexo.io/">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>]]>
+    
+    </summary>
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[36.423 X2AP读书笔记]]></title>
+    <link href="http://yoursite.com/2015/12/10/36-423-X2AP/"/>
+    <id>http://yoursite.com/2015/12/10/36-423-X2AP/</id>
+    <published>2015-12-10T08:36:31.000Z</published>
+    <updated>2015-12-10T08:39:07.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="&#x4E66;&#x540D;">&#x4E66;&#x540D;</h1><p>3GPP TS 36.423 X2 application protocol (X2AP)</p>
+<h1 id="&#x7B2C;&#x4E00;&#x9636;&#x6BB5;">&#x7B2C;&#x4E00;&#x9636;&#x6BB5;</h1><h2 id="&#x5206;&#x7C7B;">&#x5206;&#x7C7B;</h2><blockquote>
+<p>&#x786E;&#x5B9A;&#x4E66;&#x7684;&#x79CD;&#x7C7B;&#x548C;&#x5206;&#x7C7B;</p>
+</blockquote>
+<p>3GPP&#x534F;&#x8BAE;&#x6587;&#x6863;&#xFF0C; &#x5BF9;X2&#x534F;&#x8BAE;&#x7684;&#x63CF;&#x8FF0; </p>
+<h2 id="&#x4E2D;&#x5FC3;&#x601D;&#x60F3;">&#x4E2D;&#x5FC3;&#x601D;&#x60F3;</h2><blockquote>
+<p>&#x6574;&#x672C;&#x4E66;&#x5728;&#x8C08;&#x4EC0;&#x4E48;</p>
+</blockquote>
+<p>S1AP&#x76F8;&#x5173;&#x4FE1;&#x606F;&#x3002; Services, Functions, Procedures, Elements etc.</p>
+<a id="more"></a>
+<h2 id="&#x63D0;&#x7EB2;">&#x63D0;&#x7EB2;</h2><blockquote>
+<p>&#x6309;&#x7167;&#x987A;&#x5E8F;&#x4E0E;&#x5173;&#x7CFB;&#xFF0C;&#x5217;&#x51FA;&#x5168;&#x4E66;&#x7684;&#x91CD;&#x8981;&#x90E8;&#x5206;&#x3002;&#x5C06;&#x5168;&#x4E66;&#x7684;&#x7EB2;&#x8981;&#x62DF;&#x51FA;&#x6765;&#x4E4B;&#x540E;&#xFF0C;&#x518D;&#x5C06;&#x5404;&#x90E8;&#x5206;&#x7684;&#x7EB2;&#x8981;&#x4E5F;&#x4E00;&#x4E00;&#x5217;&#x51FA;&#x3002;</p>
+</blockquote>
+<h3 id="Definitions, symbols and abbreviations">Definitions, symbols and abbreviations</h3><p><strong>Elementary Procedure</strong>: X2AP protocol consists of Elementary Procedures (EPs). An X2AP Elementary Procedure is a unit of interaction <strong>between two eNBs</strong>. Two kinds of EPs are used:</p>
+<ul>
+<li>Class 1: Elementary Procedures with response (success or failure),</li>
+<li>Class 2: Elementary Procedures without response.</li>
+</ul>
+<h3 id="General">General</h3><ul>
+<li><strong>Procedure</strong> the first letters in each word in upper case characters followed by the word &#x201C;procedure&#x201D;, e.g.  Handover Preparation procedure.</li>
+<li><strong>Message</strong> the MESSAGE NAME is written with all letters in upper case characters followed by the word &#x201C;message&#x201D;, e.g. HANDOVER REQUEST message.</li>
+<li><strong>IE</strong> the Information Element Name is written with the first letters in each word in upper case characters and all letters in Italic font followed by the abbreviation &#x201C;IE&#x201D;, e.g. E-RAB ID IE.</li>
+<li><strong>Value of IE</strong>  &#x201C;Value&#x201D; is written as it is specified in sub clause 9.2 enclosed by quotation marks, e.g. &#x201C;Value&#x201D;.</li>
+</ul>
+<h3 id="X2AP services">X2AP services</h3><p>The present clause describes the services an eNB offers to its neighbours.</p>
+<h4 id="X2AP procedure modules">X2AP procedure modules</h4><p>The X2 interface X2AP procedures are divided into two modules as follows:</p>
+<ol>
+<li>X2AP Basic Mobility Procedures;</li>
+<li>X2AP Global Procedures;</li>
+</ol>
+<p>The X2AP Basic Mobility Procedures module contains procedures used to handle the UE mobility within E-UTRAN.<br>The Global Procedures module contains procedures that are not related to a specific UE. The procedures in this module are in contrast to the above module involving two peer eNBs.</p>
+<h4 id="Parallel transactions">Parallel transactions</h4><p>Unless explicitly indicated in the procedure specification, at any instance in time one protocol peer shall have a maximum of one ongoing X2AP procedure related to a certain UE.</p>
+<h4 id="Services expected from signalling transport">Services expected from signalling transport</h4><p>The signalling connection shall provide in sequence delivery of X2AP messages. X2AP shall be notified if the signalling connection breaks.</p>
+<h3 id="Functions of X2AP">Functions of X2AP</h3><table>
+<thead>
+<tr>
+<th style="text-align:left">Function</th>
+<th style="text-align:left">Elementary Procedure(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Mobility Management</td>
+<td style="text-align:left">a) Handover Preparation<br>b) SN Status Transfer<br>c) UE Context Release<br>d) Handover Cancel</td>
+</tr>
+<tr>
+<td style="text-align:left">Load Management</td>
+<td style="text-align:left">a) Load Indication<br>b) Resource Status Reporting Initiation<br>c) Resource Status Reporting</td>
+</tr>
+<tr>
+<td style="text-align:left">Reporting of General Error Situations</td>
+<td style="text-align:left">Error Indication</td>
+</tr>
+<tr>
+<td style="text-align:left">Resetting the X2</td>
+<td style="text-align:left">Reset</td>
+</tr>
+<tr>
+<td style="text-align:left">Setting up the X2</td>
+<td style="text-align:left">X2 Setup</td>
+</tr>
+<tr>
+<td style="text-align:left">eNB Configuration Update</td>
+<td style="text-align:left">a) eNB Configuration Update<br>b) Cell Activation</td>
+</tr>
+<tr>
+<td style="text-align:left">Mobility Parameters Management</td>
+<td style="text-align:left">Mobility Settings Change</td>
+</tr>
+<tr>
+<td style="text-align:left">Mobility Robustness Optimisation</td>
+<td style="text-align:left">a) Radio Link Failure Indication<br>b) Handover Report</td>
+</tr>
+<tr>
+<td style="text-align:left">Energy Saving</td>
+<td style="text-align:left">a) eNB Configuration Update<br>b) Cell Activation</td>
+</tr>
+</tbody>
+</table>
+<h3 id="X2AP procedures">X2AP procedures</h3><h4 id="Handover Preparation">Handover Preparation</h4><p>This procedure is used to establish necessary resources in an eNB for an incoming handover.<br>UE-associated signalling.</p>
+<h4 id="SN Status Transfer">SN Status Transfer</h4><p>The purpose of the SN Status Transfer procedure is to transfer the uplink PDCP SN and HFN receiver status and the downlink PDCP SN and HFN transmitter status from the source to the target eNB during an X2 handover for each respective E-RAB for which PDCP SN and HFN status preservation applies.<br>The procedure uses UE-associated signalling.</p>
+<h4 id="UE Context Release">UE Context Release</h4><p>The UE Context Release procedure is initiated by the target eNB to signal to indicate the source eNB that radio and control plane resources for the handed over UE context are allowed to be released.<br>The procedure uses UE-associated signalling.</p>
+<h4 id="Handover Cancel">Handover Cancel</h4><p>The Handover Cancel procedure is used to enable a source eNB to cancel an ongoing handover preparation or an already prepared handover.<br>The procedure uses UE-associated signalling.</p>
+<h3 id="Global Procedures">Global Procedures</h3><h4 id="Load Indication">Load Indication</h4><p>The purpose of the Load Indication procedure is to transfer load and interference co-ordination information between eNBs controlling intra-frequency neighboring cells.<br>The procedure uses non UE-associated signalling.</p>
+<h4 id="Error Indication">Error Indication</h4><p>The Error Indication procedure is initiated by an eNB to report detected errors in one incoming message, provided they cannot be reported by an appropriate failure message.<br>If the error situation arises due to reception of a message utilising UE associated signalling, then the Error Indication procedure uses UE-associated signalling. Otherwise the procedure uses non UE-associated signalling.</p>
+<h4 id="X2 Setup">X2 Setup</h4><p>The purpose of the X2 Setup procedure is to exchange application level configuration data needed for two eNBs to interoperate correctly over the X2 interface.<br>This procedure erases any existing application level configuration data in the two nodes and replaces it by the one received.<br>This procedure also resets the X2 interface like a Reset procedure would do.<br>The procedure uses non UE-associated signalling.</p>
+<h4 id="Reset">Reset</h4><p>The purpose of the Reset procedure is to align the resources in eNB1 and eNB2 in the event of an abnormal failure. The procedure resets the X2 interface. This procedure doesn&#x2019;t affect the application level configuration data exchanged during the X2 Setup procedure.<br>The procedure uses non UE-associated signalling.</p>
+<h4 id="eNB Configuration Update">eNB Configuration Update</h4><p>The purpose of the eNB Configuration Update procedure is to update application level configuration data needed for two eNBs to interoperate correctly over the X2 interface.<br>The procedure uses non UE-associated signalling.</p>
+<h4 id="Resource Status Reporting Initiation">Resource Status Reporting Initiation</h4><p>This procedure is used by an eNB to request the reporting of load measurements to another eNB.<br>The procedure uses non UE-associated signalling.</p>
+<h4 id="Resource Status Reporting">Resource Status Reporting</h4><p>This procedure is initiated by eNB 2  to report the result of measurements requested by eNB 1  using the Resource Status Reporting Initiation.<br>The procedure uses non UE-associated signalling.</p>
+<h4 id="Mobility Settings Change">Mobility Settings Change</h4><p>This procedure enables an eNB to negotiate the handover trigger settings with a peer eNB controlling neighbouring cells.<br>The procedure uses non UE-associated signalling.</p>
+<h4 id="Radio Link Failure Indication">Radio Link Failure Indication</h4><p>The purpose of the Radio Link Failure Indication procedure is to transfer information regarding RRC re-establishment attempts between eNBs controlling neighbouring cells.    The signalling takes place from the eNB at which a re-establishment attempt is made to an eNB to which the UE concerned may have previously been attached prior to radio link failure. This may aid the detection of handover failure cases (TS 36.300 [15]).<br>The procedure uses non UE-associated signalling.</p>
+<h4 id="Handover Report">Handover Report</h4><p>The purpose of the Handover Report procedure is to transfer mobility related information between eNBs controlling neighbouring cells.<br>The procedure uses non UE-associated signalling.</p>
+<h4 id="Cell Activation">Cell Activation</h4><p>The purpose of the Cell Activation procedure is to request to a neighbouring eNB to switch on one or more cells, previously reported as inactive due to energy saving reasons.<br>The procedure uses non UE-associated signalling.</p>
+<h3 id="Elements for X2AP Communication">Elements for X2AP Communication</h3><p>abbr.</p>
+<h3 id="Information Element definitions">Information Element definitions</h3><p>The GTP Tunnel Endpoint IE identifies an X2 transport bearer or the S-GW endpoint of the S1 transport bearer associated to an E-RAB. It contains a Transport Layer Address and a GTP Tunnel Endpoint Identifier. The Transport Layer Address is an IP address to be used for the X2 user plane transport or for the S1 user plane transport.<br>The GTP Tunnel Endpoint Identifier is to be used for the user plane transport between eNB and the S-GW or between eNBs.</p>
+<h2 id="&#x95EE;&#x9898;">&#x95EE;&#x9898;</h2><blockquote>
+<p>&#x4F5C;&#x8005;&#x5728;&#x95EE;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x6216;&#x8005;&#x4F5C;&#x8005;&#x60F3;&#x8981;&#x89E3;&#x51B3;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
+</blockquote>
+<h1 id="&#x7B2C;&#x4E8C;&#x9636;&#x6BB5;">&#x7B2C;&#x4E8C;&#x9636;&#x6BB5;</h1><h2 id="&#x5173;&#x952E;&#x5B57;">&#x5173;&#x952E;&#x5B57;</h2><blockquote>
+<p>&#x8BE0;&#x91CA;&#x4F5C;&#x8005;&#x4F7F;&#x7528;&#x7684;&#x5173;&#x952E;&#x5B57;&#xFF0C;&#x4E0E;&#x4F5C;&#x8005;&#x8FBE;&#x6210;&#x5171;&#x8BC6;</p>
+</blockquote>
+<h2 id="&#x91CD;&#x8981;&#x53E5;&#x5B50;">&#x91CD;&#x8981;&#x53E5;&#x5B50;</h2><blockquote>
+<p>&#x4ECE;&#x91CD;&#x8981;&#x7684;&#x53E5;&#x5B50;&#x4E2D;&#x6293;&#x51FA;&#x4E3B;&#x65E8;</p>
+</blockquote>
+<h2 id="&#x91CD;&#x65B0;&#x67B6;&#x6784;">&#x91CD;&#x65B0;&#x67B6;&#x6784;</h2><blockquote>
+<p>&#x627E;&#x51FA;&#x4F5C;&#x8005;&#x7684;&#x8BBA;&#x8FF0;&#xFF0C;&#x91CD;&#x65B0;&#x67B6;&#x6784;&#x8FD9;&#x4E9B;&#x8BBA;&#x8FF0;&#x7684;&#x524D;&#x56E0;&#x540E;&#x679C;&#xFF0C;&#x4EE5;&#x660E;&#x767D;&#x4F5C;&#x8005;&#x7684;&#x4E3B;&#x5F20;&#x3002;</p>
+</blockquote>
+<h2 id="&#x786E;&#x5B9A;&#x95EE;&#x9898;">&#x786E;&#x5B9A;&#x95EE;&#x9898;</h2><blockquote>
+<p>&#x786E;&#x5B9A;&#x4F5C;&#x8005;&#x5DF2;&#x7ECF;&#x89E3;&#x51B3;&#x4E86;&#x54EA;&#x4E9B;&#x95EE;&#x9898;&#xFF0C;&#x8FD8;&#x6709;&#x54EA;&#x4E9B;&#x95EE;&#x9898;&#x662F;&#x672A;&#x89E3;&#x51B3;&#x7684;&#x3002;&#x5728;&#x672A;&#x89E3;&#x51B3;&#x7684;&#x95EE;&#x9898;&#x4E2D;&#xFF0C;&#x54EA;&#x4E9B;&#x662F;&#x4F5C;&#x8005;&#x8BA4;&#x4E3A;&#x81EA;&#x5DF1;&#x65E0;&#x6CD5;&#x89E3;&#x51B3;&#x7684;&#x3002;</p>
+</blockquote>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h1 id="书名">书名</h1><p>3GPP TS 36.423 X2 application protocol (X2AP)</p>
+<h1 id="第一阶段">第一阶段</h1><h2 id="分类">分类</h2><blockquote>
+<p>确定书的种类和分类</p>
+</blockquote>
+<p>3GPP协议文档， 对X2协议的描述 </p>
+<h2 id="中心思想">中心思想</h2><blockquote>
+<p>整本书在谈什么</p>
+</blockquote>
+<p>S1AP相关信息。 Services, Functions, Procedures, Elements etc.</p>]]>
+    
+    </summary>
+    
+      <category term="LTE" scheme="http://yoursite.com/tags/LTE/"/>
+    
+      <category term="X2AP" scheme="http://yoursite.com/tags/X2AP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[36.413 S1AP读书笔记]]></title>
+    <link href="http://yoursite.com/2015/11/25/36-413-S1AP/"/>
+    <id>http://yoursite.com/2015/11/25/36-413-S1AP/</id>
+    <published>2015-11-25T07:17:02.000Z</published>
+    <updated>2015-12-16T06:40:23.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="&#x4E66;&#x540D;">&#x4E66;&#x540D;</h1><p>3GPP TS 36.413  V9.8.0 S1 Application Protocol (S1AP)</p>
+<h1 id="&#x7B2C;&#x4E00;&#x9636;&#x6BB5;">&#x7B2C;&#x4E00;&#x9636;&#x6BB5;</h1><h2 id="&#x5206;&#x7C7B;">&#x5206;&#x7C7B;</h2><blockquote>
+<p>&#x786E;&#x5B9A;&#x4E66;&#x7684;&#x79CD;&#x7C7B;&#x548C;&#x5206;&#x7C7B;</p>
+</blockquote>
+<p>3GPP&#x534F;&#x8BAE;&#x6587;&#x6863;</p>
+<a id="more"></a>
+<h2 id="&#x4E2D;&#x5FC3;&#x601D;&#x60F3;">&#x4E2D;&#x5FC3;&#x601D;&#x60F3;</h2><blockquote>
+<p>&#x6574;&#x672C;&#x4E66;&#x5728;&#x8C08;&#x4EC0;&#x4E48;</p>
+</blockquote>
+<p>S1AP&#x76F8;&#x5173;&#x4FE1;&#x606F;&#x3002; Services, functions, procedures, elements etc.</p>
+<h2 id="&#x63D0;&#x7EB2;">&#x63D0;&#x7EB2;</h2><blockquote>
+<p>&#x6309;&#x7167;&#x987A;&#x5E8F;&#x4E0E;&#x5173;&#x7CFB;&#xFF0C;&#x5217;&#x51FA;&#x5168;&#x4E66;&#x7684;&#x91CD;&#x8981;&#x90E8;&#x5206;&#x3002;&#x5C06;&#x5168;&#x4E66;&#x7684;&#x7EB2;&#x8981;&#x62DF;&#x51FA;&#x6765;&#x4E4B;&#x540E;&#xFF0C;&#x518D;&#x5C06;&#x5404;&#x90E8;&#x5206;&#x7684;&#x7EB2;&#x8981;&#x4E5F;&#x4E00;&#x4E00;&#x5217;&#x51FA;&#x3002;</p>
+</blockquote>
+<h3 id="S1AP Services">S1AP Services</h3><h3 id="S1AP General">S1AP General</h3><h3 id="Functions of S1AP">Functions of S1AP</h3><h3 id="S1AP Procedures">S1AP Procedures</h3><ol>
+<li><p>E-RAB management function</p>
+<ol>
+<li>E-RAB Setup<br>The purpose of the E-RAB Setup procedure is to assign resources on Uu and S1 for one or several E-RABs and to setup corresponding Data Radio Bearers for a given UE. The procedure uses UE-associated signalling.</li>
+<li>E-RAB Modify<br>The purpose of the E-RAB Modify procedure is to enable modifications of already established E-RABs for a given UE.  The procedure uses UE-associated signalling.</li>
+<li>E-RAB Release<br>The purpose of the E-RAB Release procedure is to enable the release of already established E-RABs for a given UE.  The procedure uses UE-associated signalling.</li>
+</ol>
+</li>
+<li><p>Initial Context Transfer function</p>
+<ol>
+<li>Initial Context Setup<br>The purpose of the Initial Context Setup procedure is to establish the necessary overall initial UE Context including E-RAB context, the Security Key, Handover Restriction List, UE Radio capability and UE Security Capabilities etc. The procedure uses UE-associated signalling.</li>
+<li>UE Context Release Request &#x2013; eNB initiated<br>The purpose of the UE Context Release Request procedure is to enable the eNB to request the MME to release the UE-associated logical S1-connection due to E-UTRAN generated reason. The procedure uses UE-associated signalling.</li>
+<li>UE Context Release (MME initiated)<br>The purpose of the UE Context Release procedure is to enable the MME to order the release of the UE-associated logical connection due to various reasons, for example completion of a transaction between the UE and the EPC, or completion of successful handover, or completion of handover cancellation, or release of the old UE-associated logical S1-connection when two UE-associated logical S1-connections toward the same UE is detected after the UE has initiated the establishment of a new UE-associated logical S1-connection, or the UE is no longer allowed to access the CSG cell. The procedure uses UE-associated S1 connection.</li>
+<li>UE Context Modification<br>The purpose of the UE Context Modification procedure is to modify the established UE Context partly (e.g. with the Security Key or the Subscriber Profile ID for RAT/Frequency priority). The procedure uses UE-associated signalling.</li>
+</ol>
+</li>
+<li><p>Handover Signalling</p>
+<ol>
+<li>Handover Preparation<br>The purpose of the Handover Preparation procedure is to request the preparation of resources at the target side via the EPC. There is only one Handover Preparation procedure ongoing at the same time for a certain UE.</li>
+<li>Handover Resource Allocation<br>The purpose of the Handover Resource Allocation procedure is to reserve resources at the target eNB for the handover of a UE.</li>
+<li>Handover Notification<br>The purpose of the Handover Notification procedure is to indicate to the MME that the UE has arrived to the target cell and the S1 handover has been successfully completed.</li>
+<li>Path Switch Request<br>The purpose of the Path Switch Request procedure is to request the switch of a downlink GTP tunnel towards a new GTP tunnel endpoint.</li>
+<li>Handover Cancellation<br>The purpose of the Handover Cancel procedure is to enable a source eNB to cancel an ongoing handover preparation or an already prepared handover.</li>
+<li>eNB Status Transfer<br>The purpose of the eNB Status Transfer procedure is to transfer the uplink PDCP-SN and HFN receiver status and the downlink PDCP-SN and HFN transmitter status from the source to the target eNB via the MME during an <strong>intra LTE S1</strong> handover for each respective E-RAB for which PDCP-SN and HFN status preservation applies.</li>
+<li>MME Status Transfer<br>The purpose of the MME Status Transfer procedure is to transfer the uplink PDCP-SN and HFN receiver status and the downlink PDCP-SN and HFN transmitter status from the source to the target eNB via the MME during an <strong>S1</strong> handover for each respective E-RAB for which PDCP SN and HFN status preservation applies.</li>
+</ol>
+</li>
+<li><p>Paging<br>The purpose of the Paging procedure is to enable the MME to page a UE in the specific eNB.</p>
+</li>
+<li><p>NAS transport<br>The purpose of the NAS Transport procedure is to carry UE &#x2013; MME signalling over the S1 Interface. The NAS messages are not interpreted by the eNB, and their content is outside the scope of this specification. The procedure may use an existing UE-associated logical S1-connection. If no UE-associated logical S1-connection exists, the establishment of the UE-associated logical S1-connection is initiated (and may be established) as part of the procedure.<br>The NAS messages are transported in an IE of the INITIAL UE MESSAGE, DOWNLINK NAS TRANSPORT or UPLINK NAS TRANSPORT messages.</p>
+<ol>
+<li>Initial UE Message</li>
+<li>DOWNLINK NAS TRANSPORT</li>
+<li>UPLINK NAS TRANSPORT</li>
+<li>NAS NON DELIVERY INDICATION</li>
+</ol>
+</li>
+<li>Management procedures<ol>
+<li>Reset<br>eNB &lt;&#x2013;&gt; MME<br>The purpose of the Reset procedure is to initialise or re-initialise the E-UTRAN, or part of E-UTRAN S1AP UE-related contexts, in the event of a failure in the EPC or vice versa.<br>The procedure uses non-UE associated signalling.</li>
+<li>Error Indication<br>eNB &lt;&#x2013;&gt; MME<br>The Error Indication procedure is initiated by a node to report detected errors in one incoming message, provided they cannot be reported by an appropriate failure message.<br>If the error situation arises due to reception of a message utilising UE associated signalling, then the Error Indication procedure uses UE associated signalling. Otherwise the procedure uses non-UE associated signalling.</li>
+<li>S1 Setup<br>The purpose of the S1 Setup procedure is to exchange application level data needed for the eNB and MME to interoperate correctly on the S1 interface. This procedure shall be the first S1AP procedure triggered after the TNL association has become operational. The procedure uses non-UE associated signalling.<br>This procedure erases any existing application level configuration data in the two nodes and replaces it by the one received.</li>
+<li>eNB Configuration Update<br>eNB &#x2013;&gt; MME<br>The purpose of the eNB Configuration Update procedure is to update application level configuration data needed for the eNB and MME to interoperate correctly on the S1 interface. This procedure does not affect existing UE-related contexts, if any.</li>
+<li>MME Configuration Update<br>eNB &lt;&#x2013; MME<br>The purpose of the MME Configuration Update procedure is to update application level configuration data needed for the eNB and MME to interoperate correctly on the S1 interface. This procedure does not affect existing UE-related contexts, if any.</li>
+<li>Overload Start<br>eNB &lt;&#x2013; MME<br>The purpose of the Overload Start procedure is to inform an eNB to reduce the signalling load towards the concerned MME.<br>The procedure uses non-UE associated signalling.</li>
+<li>Overload Stop<br>eNB &lt;&#x2013; MME<br>The purpose of the Overload Stop procedure is to signal to an eNB the MME is connected to that the overload situation at the MME has ended and normal operation shall resume.<br>The procedure uses non-UE associated signalling.</li>
+</ol>
+</li>
+<li>S1 CDMA2000 Tunneling Procedures<br>The purpose of S1 CDMA2000 Tunneling procedures is to carry CDMA2000 signalling between UE and CDMA2000 RAT over the S1 Interface.</li>
+<li>UE Capability Info Indication<br>eNB &#x2013;&gt; MME<br>The purpose of the UE Capability Info Indication procedure is to enable the eNB to provide to the MME UE capability-related information.</li>
+<li>Trace Procedures<ol>
+<li>Trace Start<br>eNB &lt;&#x2013; MME<br>The purpose of the Trace Start procedure is to allow the MME to request the eNB to start a trace session for a UE in ECM_CONNECTED mode. The procedure uses UE-associated signalling.<br>If no UE-associated logical S1-connection exists, the UE-associated logical S1-connection shall be established as part of the procedure.</li>
+<li>Trace Failure Indication<br>eNB &#x2013;&gt; MME<br>The purpose of the Trace Failure Indication procedure is to allow the eNB to inform the MME that a Trace Start procedure or a Deactivate Trace procedure has failed due to an interaction with a handover procedure. The procedure uses UE-associated signalling.</li>
+<li>Deactivate Trace<br>eNB &lt;&#x2013; MME<br>The purpose of the Deactivate Trace procedure is to allow the MME to request the eNB to stop the trace session, for the indicated trace reference.</li>
+<li>Cell Traffic Trace<br>eNB &#x2013;&gt; MME<br>The purpose of the Cell Traffic Trace procedure is to send the allocated Trace Recording Session Reference and the Trace Reference to MME. The procedure uses UE-associated signalling.</li>
+</ol>
+</li>
+<li>Location Reporting Procedures<ol>
+<li>Location Reporting Control<br>eNB &lt;&#x2013; MME<br>The purpose of Location Reporting Control procedure is to allow the MME to request the eNB to report where the UE is currently located. The procedure uses UE-associated signalling.</li>
+<li>Location Report Failure Indication<br>eNB &#x2013;&gt; MME<br>The Location Report Failure Indication procedure is initiated by an eNB in order to inform the MME that a Location Reporting Control procedure has failed due to an interaction with a handover procedure. The procedure uses UE-associated signalling.</li>
+<li>Location Report<br>eNB &#x2013;&gt; MME<br>The purpose of Location Report procedure is to provide the UE&#x2019;s current location to the MME. The procedure uses UE-associated signalling.</li>
+</ol>
+</li>
+<li>Warning Message Transmission Procedures<ol>
+<li>Write-Replace Warning<br>The purpose of Write-Replace Warning procedure is to start or overwrite the broadcasting of warning message.<br>The procedure uses non UE-associated signalling.</li>
+<li>Kill<br>The purpose of Kill procedure is to cancel an already ongoing broadcast of a warning message.<br>The procedure uses non UE-associated signalling.</li>
+</ol>
+</li>
+<li>eNB Direct Information Transfer<br>The purpose of the eNB Direct Information Transfer procedure is to transfer RAN information from the eNB to the MME in unacknowledged mode. The MME does not interpret the transferred RAN information.<br>This procedure uses non-UE associated signalling.</li>
+<li>MME Direct Information Transfer<br>The purpose of the MME Direct Information Transfer procedure is to transfer RAN information from the MME to the eNB in unacknowledged mode.<br>This procedure uses non-UE associated signalling.</li>
+<li>eNB Configuration Transfer<br>The purpose of the eNB Configuration Transfer procedure is to transfer RAN configuration information from the eNB to the MME in unacknowledged mode. The MME does not interpret the transferred RAN configuration information.<br>This procedure uses non-UE associated signalling.</li>
+<li>MME Configuration Transfer<br>The purpose of the MME Configuration Transfer procedure is to transfer RAN configuration information from the MME to the eNB in unacknowledged mode.<br>This procedure uses non-UE associated signalling.</li>
+<li>LPPa transport<br>The purpose of the LPPa Transport procedure is to carry LPPa signalling between eNB and E-SMLC over the S1 Interface. The procedure may use UE-associated signalling or non-UE associated signalling. The UE-associated signalling is used to support E-CID positioning of a specific UE. The non-UE associated signalling is used to obtain assistance data from an eNodeB to support OTDOA positioning for any UE.</li>
+</ol>
+<h3 id="Elements for S1AP Communication">Elements for S1AP Communication</h3><ol>
+<li>Message Functional Definition and Content</li>
+<li>Information Element Definitions</li>
+<li>Message and Information Element Abstract Syntax (with ASN.1)<br>a sending entity shall construct a S1AP message according to the PDU definitions module and with the following additional rules:<ul>
+<li>IEs shall be ordered (in an IE container) in the order they appear in object set definitions.</li>
+<li>Object set definitions specify how many times IEs may appear. An IE shall appear exactly once if the presence field in an object has value &#x201C;mandatory&#x201D;. An IE may appear at most once if the presence field in an object has value &#x201C;optional&#x201D; or &#x201C;conditional&#x201D;. If in a tabular format there is multiplicity specified for an IE (i.e. an IE list) then in the corresponding ASN.1 definition the list definition is separated into two parts. The first part defines an IE container list where the list elements reside. The second part defines list elements. The IE container list appears as an IE of its own. For this version of the standard an IE container list may contain only one kind of list elements.</li>
+</ul>
+</li>
+</ol>
+<h3 id="Handling of Unknown, Unforeseen and Erroneous Protocol Data">Handling of Unknown, Unforeseen and Erroneous Protocol Data</h3><p>Protocol Error cases can be divided into three classes:</p>
+<ul>
+<li>Transfer Syntax Error.</li>
+<li>Abstract Syntax Error.</li>
+<li>Logical Error.</li>
+</ul>
+<h2 id="&#x95EE;&#x9898;">&#x95EE;&#x9898;</h2><blockquote>
+<p>&#x4F5C;&#x8005;&#x5728;&#x95EE;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x6216;&#x8005;&#x4F5C;&#x8005;&#x60F3;&#x8981;&#x89E3;&#x51B3;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
+</blockquote>
+<h1 id="&#x7B2C;&#x4E8C;&#x9636;&#x6BB5;">&#x7B2C;&#x4E8C;&#x9636;&#x6BB5;</h1><h2 id="&#x5173;&#x952E;&#x5B57;">&#x5173;&#x952E;&#x5B57;</h2><blockquote>
+<p>&#x8BE0;&#x91CA;&#x4F5C;&#x8005;&#x4F7F;&#x7528;&#x7684;&#x5173;&#x952E;&#x5B57;&#xFF0C;&#x4E0E;&#x4F5C;&#x8005;&#x8FBE;&#x6210;&#x5171;&#x8BC6;</p>
+</blockquote>
+<h2 id="&#x91CD;&#x8981;&#x53E5;&#x5B50;">&#x91CD;&#x8981;&#x53E5;&#x5B50;</h2><blockquote>
+<p>&#x4ECE;&#x91CD;&#x8981;&#x7684;&#x53E5;&#x5B50;&#x4E2D;&#x6293;&#x51FA;&#x4E3B;&#x65E8;</p>
+</blockquote>
+<ol>
+<li><p>S1AP provides the signalling service between E-UTRAN and the EPC</p>
+</li>
+<li><p>MME &#x8D1F;&#x8D23;setting up, modifying and releasing E-RAB, eNB <strong>ONLY</strong> &#x8D1F;&#x8D23; releasing E-RAB</p>
+<blockquote>
+<p>E-RAB management function: This overall functionality is responsible for setting up, modifying and releasing E-RABs, which are triggered by the MME The release of E-RABs may be triggered by the eNB as well.</p>
+</blockquote>
+</li>
+<li><p>The eNB shall allocate a unique eNB UE S1AP ID to be used for the UE and the eNB shall include this identity in the INITIAL UE MESSAGE message.</p>
+</li>
+<li><p>The first UL NAS message is always received in the RRC CONNECTION SETUP COMPLETE message.</p>
+</li>
+<li><p>The MME identifies the associated UE based on the MME UE S1AP ID IE.  The eNB identifies the associated UE based on the eNB UE S1AP ID IE.</p>
+</li>
+</ol>
+<h2 id="&#x91CD;&#x65B0;&#x67B6;&#x6784;">&#x91CD;&#x65B0;&#x67B6;&#x6784;</h2><blockquote>
+<p>&#x627E;&#x51FA;&#x4F5C;&#x8005;&#x7684;&#x8BBA;&#x8FF0;&#xFF0C;&#x91CD;&#x65B0;&#x67B6;&#x6784;&#x8FD9;&#x4E9B;&#x8BBA;&#x8FF0;&#x7684;&#x524D;&#x56E0;&#x540E;&#x679C;&#xFF0C;&#x4EE5;&#x660E;&#x767D;&#x4F5C;&#x8005;&#x7684;&#x4E3B;&#x5F20;&#x3002;</p>
+</blockquote>
+<h2 id="&#x786E;&#x5B9A;&#x95EE;&#x9898;">&#x786E;&#x5B9A;&#x95EE;&#x9898;</h2><blockquote>
+<p>&#x786E;&#x5B9A;&#x4F5C;&#x8005;&#x5DF2;&#x7ECF;&#x89E3;&#x51B3;&#x4E86;&#x54EA;&#x4E9B;&#x95EE;&#x9898;&#xFF0C;&#x8FD8;&#x6709;&#x54EA;&#x4E9B;&#x95EE;&#x9898;&#x662F;&#x672A;&#x89E3;&#x51B3;&#x7684;&#x3002;&#x5728;&#x672A;&#x89E3;&#x51B3;&#x7684;&#x95EE;&#x9898;&#x4E2D;&#xFF0C;&#x54EA;&#x4E9B;&#x662F;&#x4F5C;&#x8005;&#x8BA4;&#x4E3A;&#x81EA;&#x5DF1;&#x65E0;&#x6CD5;&#x89E3;&#x51B3;&#x7684;&#x3002;</p>
+</blockquote>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h1 id="书名">书名</h1><p>3GPP TS 36.413  V9.8.0 S1 Application Protocol (S1AP)</p>
+<h1 id="第一阶段">第一阶段</h1><h2 id="分类">分类</h2><blockquote>
+<p>确定书的种类和分类</p>
+</blockquote>
+<p>3GPP协议文档</p>]]>
+    
+    </summary>
+    
+      <category term="LTE" scheme="http://yoursite.com/tags/LTE/"/>
+    
+      <category term="S1AP" scheme="http://yoursite.com/tags/S1AP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[test 3]]></title>
+    <link href="http://yoursite.com/2015/08/19/test-3/"/>
+    <id>http://yoursite.com/2015/08/19/test-3/</id>
+    <published>2015-08-19T06:16:36.000Z</published>
+    <updated>2015-12-01T06:41:22.000Z</updated>
+    <content type="html"><![CDATA[<p>this is a test for depoly to github.</p>
+<p>this is a test for plantuml</p>
+<img src="http://www.plantuml.com/plantuml/svg/Syp9J4vLqBLJSCfFib9mB2t9ICqhoKnEBCdCprC8IYqiJIqkuGBAAUW2rJY256DHLLoGdrUSokM8QbPUFb1PaK8YTZCXYcrqTI6g4t6fXfWD0000">
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>this is a test for depoly to github.</p>
+<p>this is a test for plantuml</p>
+<img src="http://www.plantuml.com/plantuml/svg/Syp9J4vLqBLJSC]]>
+    </summary>
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[first_test]]></title>
+    <link href="http://yoursite.com/2015/08/18/first-test/"/>
+    <id>http://yoursite.com/2015/08/18/first-test/</id>
+    <published>2015-08-18T04:14:30.000Z</published>
+    <updated>2015-08-18T04:14:30.000Z</updated>
+    <content type="html"></content>
+    <summary type="html">
+    
+    </summary>
+    
+  </entry>
+  
+</feed>
