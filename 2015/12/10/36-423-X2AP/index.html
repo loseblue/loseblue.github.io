@@ -1,5 +1,11 @@
 <!doctype html>
-<html class="theme-next   use-motion ">
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -32,7 +38,7 @@
 
 <link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.0.0" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="LTE,X2AP," />
@@ -46,7 +52,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.0" />
 
 
 
@@ -91,10 +97,16 @@ S1AP相关信息。 Services, Functions, Procedures, Elements etc.">
 
 
 <script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
   var CONFIG = {
-    scheme: '',
-    sidebar: 'always',
-    motion: true
+    scheme: 'Pisces',
+    sidebar: '[object Object]',
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
   };
 </script>
 
@@ -103,15 +115,6 @@ S1AP相关信息。 Services, Functions, Procedures, Elements etc.">
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
-  <!--[if lte IE 8]>
-  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
-    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
-           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
-           style='margin-left:auto;margin-right:auto;display: block;'/>
-    </a>
-  </div>
-<![endif]-->
   
 
 
@@ -119,7 +122,12 @@ S1AP相关信息。 Services, Functions, Procedures, Elements etc.">
 
 
 
-  <div class="container one-column page-post-detail">
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -183,6 +191,7 @@ S1AP相关信息。 Services, Functions, Procedures, Elements etc.">
 
       
       
+      
     </ul>
   
 
@@ -194,8 +203,9 @@ S1AP相关信息。 Services, Functions, Procedures, Elements etc.">
 
     <main id="main" class="main">
       <div class="main-inner">
-        <div id="content" class="content">
-          
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
 
   <div id="posts" class="posts-expand">
     
@@ -226,7 +236,10 @@ S1AP相关信息。 Services, Functions, Procedures, Elements etc.">
 
         <div class="post-meta">
           <span class="post-time">
-            發表於
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">發表於</span>
             <time itemprop="dateCreated" datetime="2015-12-10T16:36:31+08:00" content="12-10-2015">
               12-10-2015
             </time>
@@ -247,18 +260,20 @@ S1AP相关信息。 Services, Functions, Procedures, Elements etc.">
 
           
 
+          
+          
         </div>
       </header>
     
 
 
-    <div class="post-body">
+    <div class="post-body" itemprop="articleBody">
 
       
       
 
       
-        <span itemprop="articleBody"><h1 id="&#x4E66;&#x540D;">&#x4E66;&#x540D;</h1><p>3GPP TS 36.423 X2 application protocol (X2AP)</p>
+        <h1 id="&#x4E66;&#x540D;">&#x4E66;&#x540D;</h1><p>3GPP TS 36.423 X2 application protocol (X2AP)</p>
 <h1 id="&#x7B2C;&#x4E00;&#x9636;&#x6BB5;">&#x7B2C;&#x4E00;&#x9636;&#x6BB5;</h1><h2 id="&#x5206;&#x7C7B;">&#x5206;&#x7C7B;</h2><blockquote>
 <p>&#x786E;&#x5B9A;&#x4E66;&#x7684;&#x79CD;&#x7C7B;&#x548C;&#x5206;&#x7C7B;</p>
 </blockquote>
@@ -271,27 +286,27 @@ S1AP相关信息。 Services, Functions, Procedures, Elements etc.">
 <h2 id="&#x63D0;&#x7EB2;">&#x63D0;&#x7EB2;</h2><blockquote>
 <p>&#x6309;&#x7167;&#x987A;&#x5E8F;&#x4E0E;&#x5173;&#x7CFB;&#xFF0C;&#x5217;&#x51FA;&#x5168;&#x4E66;&#x7684;&#x91CD;&#x8981;&#x90E8;&#x5206;&#x3002;&#x5C06;&#x5168;&#x4E66;&#x7684;&#x7EB2;&#x8981;&#x62DF;&#x51FA;&#x6765;&#x4E4B;&#x540E;&#xFF0C;&#x518D;&#x5C06;&#x5404;&#x90E8;&#x5206;&#x7684;&#x7EB2;&#x8981;&#x4E5F;&#x4E00;&#x4E00;&#x5217;&#x51FA;&#x3002;</p>
 </blockquote>
-<h3 id="Definitions, symbols and abbreviations">Definitions, symbols and abbreviations</h3><p><strong>Elementary Procedure</strong>: X2AP protocol consists of Elementary Procedures (EPs). An X2AP Elementary Procedure is a unit of interaction <strong>between two eNBs</strong>. Two kinds of EPs are used:</p>
+<h3 id="definitions-symbols-and-abbreviations">Definitions, symbols and abbreviations</h3><p><strong>Elementary Procedure</strong>: X2AP protocol consists of Elementary Procedures (EPs). An X2AP Elementary Procedure is a unit of interaction <strong>between two eNBs</strong>. Two kinds of EPs are used:</p>
 <ul>
 <li>Class 1: Elementary Procedures with response (success or failure),</li>
 <li>Class 2: Elementary Procedures without response.</li>
 </ul>
-<h3 id="General">General</h3><ul>
+<h3 id="general">General</h3><ul>
 <li><strong>Procedure</strong> the first letters in each word in upper case characters followed by the word &#x201C;procedure&#x201D;, e.g.  Handover Preparation procedure.</li>
 <li><strong>Message</strong> the MESSAGE NAME is written with all letters in upper case characters followed by the word &#x201C;message&#x201D;, e.g. HANDOVER REQUEST message.</li>
 <li><strong>IE</strong> the Information Element Name is written with the first letters in each word in upper case characters and all letters in Italic font followed by the abbreviation &#x201C;IE&#x201D;, e.g. E-RAB ID IE.</li>
 <li><strong>Value of IE</strong>  &#x201C;Value&#x201D; is written as it is specified in sub clause 9.2 enclosed by quotation marks, e.g. &#x201C;Value&#x201D;.</li>
 </ul>
-<h3 id="X2AP services">X2AP services</h3><p>The present clause describes the services an eNB offers to its neighbours.</p>
-<h4 id="X2AP procedure modules">X2AP procedure modules</h4><p>The X2 interface X2AP procedures are divided into two modules as follows:</p>
+<h3 id="x2ap-services">X2AP services</h3><p>The present clause describes the services an eNB offers to its neighbours.</p>
+<h4 id="x2ap-procedure-modules">X2AP procedure modules</h4><p>The X2 interface X2AP procedures are divided into two modules as follows:</p>
 <ol>
 <li>X2AP Basic Mobility Procedures;</li>
 <li>X2AP Global Procedures;</li>
 </ol>
 <p>The X2AP Basic Mobility Procedures module contains procedures used to handle the UE mobility within E-UTRAN.<br>The Global Procedures module contains procedures that are not related to a specific UE. The procedures in this module are in contrast to the above module involving two peer eNBs.</p>
-<h4 id="Parallel transactions">Parallel transactions</h4><p>Unless explicitly indicated in the procedure specification, at any instance in time one protocol peer shall have a maximum of one ongoing X2AP procedure related to a certain UE.</p>
-<h4 id="Services expected from signalling transport">Services expected from signalling transport</h4><p>The signalling connection shall provide in sequence delivery of X2AP messages. X2AP shall be notified if the signalling connection breaks.</p>
-<h3 id="Functions of X2AP">Functions of X2AP</h3><table>
+<h4 id="parallel-transactions">Parallel transactions</h4><p>Unless explicitly indicated in the procedure specification, at any instance in time one protocol peer shall have a maximum of one ongoing X2AP procedure related to a certain UE.</p>
+<h4 id="services-expected-from-signalling-transport">Services expected from signalling transport</h4><p>The signalling connection shall provide in sequence delivery of X2AP messages. X2AP shall be notified if the signalling connection breaks.</p>
+<h3 id="functions-of-x2ap">Functions of X2AP</h3><table>
 <thead>
 <tr>
 <th style="text-align:left">Function</th>
@@ -337,23 +352,23 @@ S1AP相关信息。 Services, Functions, Procedures, Elements etc.">
 </tr>
 </tbody>
 </table>
-<h3 id="X2AP procedures">X2AP procedures</h3><h4 id="Handover Preparation">Handover Preparation</h4><p>This procedure is used to establish necessary resources in an eNB for an incoming handover.<br>UE-associated signalling.</p>
-<h4 id="SN Status Transfer">SN Status Transfer</h4><p>The purpose of the SN Status Transfer procedure is to transfer the uplink PDCP SN and HFN receiver status and the downlink PDCP SN and HFN transmitter status from the source to the target eNB during an X2 handover for each respective E-RAB for which PDCP SN and HFN status preservation applies.<br>The procedure uses UE-associated signalling.</p>
-<h4 id="UE Context Release">UE Context Release</h4><p>The UE Context Release procedure is initiated by the target eNB to signal to indicate the source eNB that radio and control plane resources for the handed over UE context are allowed to be released.<br>The procedure uses UE-associated signalling.</p>
-<h4 id="Handover Cancel">Handover Cancel</h4><p>The Handover Cancel procedure is used to enable a source eNB to cancel an ongoing handover preparation or an already prepared handover.<br>The procedure uses UE-associated signalling.</p>
-<h3 id="Global Procedures">Global Procedures</h3><h4 id="Load Indication">Load Indication</h4><p>The purpose of the Load Indication procedure is to transfer load and interference co-ordination information between eNBs controlling intra-frequency neighboring cells.<br>The procedure uses non UE-associated signalling.</p>
-<h4 id="Error Indication">Error Indication</h4><p>The Error Indication procedure is initiated by an eNB to report detected errors in one incoming message, provided they cannot be reported by an appropriate failure message.<br>If the error situation arises due to reception of a message utilising UE associated signalling, then the Error Indication procedure uses UE-associated signalling. Otherwise the procedure uses non UE-associated signalling.</p>
-<h4 id="X2 Setup">X2 Setup</h4><p>The purpose of the X2 Setup procedure is to exchange application level configuration data needed for two eNBs to interoperate correctly over the X2 interface.<br>This procedure erases any existing application level configuration data in the two nodes and replaces it by the one received.<br>This procedure also resets the X2 interface like a Reset procedure would do.<br>The procedure uses non UE-associated signalling.</p>
-<h4 id="Reset">Reset</h4><p>The purpose of the Reset procedure is to align the resources in eNB1 and eNB2 in the event of an abnormal failure. The procedure resets the X2 interface. This procedure doesn&#x2019;t affect the application level configuration data exchanged during the X2 Setup procedure.<br>The procedure uses non UE-associated signalling.</p>
-<h4 id="eNB Configuration Update">eNB Configuration Update</h4><p>The purpose of the eNB Configuration Update procedure is to update application level configuration data needed for two eNBs to interoperate correctly over the X2 interface.<br>The procedure uses non UE-associated signalling.</p>
-<h4 id="Resource Status Reporting Initiation">Resource Status Reporting Initiation</h4><p>This procedure is used by an eNB to request the reporting of load measurements to another eNB.<br>The procedure uses non UE-associated signalling.</p>
-<h4 id="Resource Status Reporting">Resource Status Reporting</h4><p>This procedure is initiated by eNB 2  to report the result of measurements requested by eNB 1  using the Resource Status Reporting Initiation.<br>The procedure uses non UE-associated signalling.</p>
-<h4 id="Mobility Settings Change">Mobility Settings Change</h4><p>This procedure enables an eNB to negotiate the handover trigger settings with a peer eNB controlling neighbouring cells.<br>The procedure uses non UE-associated signalling.</p>
-<h4 id="Radio Link Failure Indication">Radio Link Failure Indication</h4><p>The purpose of the Radio Link Failure Indication procedure is to transfer information regarding RRC re-establishment attempts between eNBs controlling neighbouring cells.    The signalling takes place from the eNB at which a re-establishment attempt is made to an eNB to which the UE concerned may have previously been attached prior to radio link failure. This may aid the detection of handover failure cases (TS 36.300 [15]).<br>The procedure uses non UE-associated signalling.</p>
-<h4 id="Handover Report">Handover Report</h4><p>The purpose of the Handover Report procedure is to transfer mobility related information between eNBs controlling neighbouring cells.<br>The procedure uses non UE-associated signalling.</p>
-<h4 id="Cell Activation">Cell Activation</h4><p>The purpose of the Cell Activation procedure is to request to a neighbouring eNB to switch on one or more cells, previously reported as inactive due to energy saving reasons.<br>The procedure uses non UE-associated signalling.</p>
-<h3 id="Elements for X2AP Communication">Elements for X2AP Communication</h3><p>abbr.</p>
-<h3 id="Information Element definitions">Information Element definitions</h3><p>The GTP Tunnel Endpoint IE identifies an X2 transport bearer or the S-GW endpoint of the S1 transport bearer associated to an E-RAB. It contains a Transport Layer Address and a GTP Tunnel Endpoint Identifier. The Transport Layer Address is an IP address to be used for the X2 user plane transport or for the S1 user plane transport.<br>The GTP Tunnel Endpoint Identifier is to be used for the user plane transport between eNB and the S-GW or between eNBs.</p>
+<h3 id="x2ap-procedures">X2AP procedures</h3><h4 id="handover-preparation">Handover Preparation</h4><p>This procedure is used to establish necessary resources in an eNB for an incoming handover.<br>UE-associated signalling.</p>
+<h4 id="sn-status-transfer">SN Status Transfer</h4><p>The purpose of the SN Status Transfer procedure is to transfer the uplink PDCP SN and HFN receiver status and the downlink PDCP SN and HFN transmitter status from the source to the target eNB during an X2 handover for each respective E-RAB for which PDCP SN and HFN status preservation applies.<br>The procedure uses UE-associated signalling.</p>
+<h4 id="ue-context-release">UE Context Release</h4><p>The UE Context Release procedure is initiated by the target eNB to signal to indicate the source eNB that radio and control plane resources for the handed over UE context are allowed to be released.<br>The procedure uses UE-associated signalling.</p>
+<h4 id="handover-cancel">Handover Cancel</h4><p>The Handover Cancel procedure is used to enable a source eNB to cancel an ongoing handover preparation or an already prepared handover.<br>The procedure uses UE-associated signalling.</p>
+<h3 id="global-procedures">Global Procedures</h3><h4 id="load-indication">Load Indication</h4><p>The purpose of the Load Indication procedure is to transfer load and interference co-ordination information between eNBs controlling intra-frequency neighboring cells.<br>The procedure uses non UE-associated signalling.</p>
+<h4 id="error-indication">Error Indication</h4><p>The Error Indication procedure is initiated by an eNB to report detected errors in one incoming message, provided they cannot be reported by an appropriate failure message.<br>If the error situation arises due to reception of a message utilising UE associated signalling, then the Error Indication procedure uses UE-associated signalling. Otherwise the procedure uses non UE-associated signalling.</p>
+<h4 id="x2-setup">X2 Setup</h4><p>The purpose of the X2 Setup procedure is to exchange application level configuration data needed for two eNBs to interoperate correctly over the X2 interface.<br>This procedure erases any existing application level configuration data in the two nodes and replaces it by the one received.<br>This procedure also resets the X2 interface like a Reset procedure would do.<br>The procedure uses non UE-associated signalling.</p>
+<h4 id="reset">Reset</h4><p>The purpose of the Reset procedure is to align the resources in eNB1 and eNB2 in the event of an abnormal failure. The procedure resets the X2 interface. This procedure doesn&#x2019;t affect the application level configuration data exchanged during the X2 Setup procedure.<br>The procedure uses non UE-associated signalling.</p>
+<h4 id="enb-configuration-update">eNB Configuration Update</h4><p>The purpose of the eNB Configuration Update procedure is to update application level configuration data needed for two eNBs to interoperate correctly over the X2 interface.<br>The procedure uses non UE-associated signalling.</p>
+<h4 id="resource-status-reporting-initiation">Resource Status Reporting Initiation</h4><p>This procedure is used by an eNB to request the reporting of load measurements to another eNB.<br>The procedure uses non UE-associated signalling.</p>
+<h4 id="resource-status-reporting">Resource Status Reporting</h4><p>This procedure is initiated by eNB 2  to report the result of measurements requested by eNB 1  using the Resource Status Reporting Initiation.<br>The procedure uses non UE-associated signalling.</p>
+<h4 id="mobility-settings-change">Mobility Settings Change</h4><p>This procedure enables an eNB to negotiate the handover trigger settings with a peer eNB controlling neighbouring cells.<br>The procedure uses non UE-associated signalling.</p>
+<h4 id="radio-link-failure-indication">Radio Link Failure Indication</h4><p>The purpose of the Radio Link Failure Indication procedure is to transfer information regarding RRC re-establishment attempts between eNBs controlling neighbouring cells.    The signalling takes place from the eNB at which a re-establishment attempt is made to an eNB to which the UE concerned may have previously been attached prior to radio link failure. This may aid the detection of handover failure cases (TS 36.300 [15]).<br>The procedure uses non UE-associated signalling.</p>
+<h4 id="handover-report">Handover Report</h4><p>The purpose of the Handover Report procedure is to transfer mobility related information between eNBs controlling neighbouring cells.<br>The procedure uses non UE-associated signalling.</p>
+<h4 id="cell-activation">Cell Activation</h4><p>The purpose of the Cell Activation procedure is to request to a neighbouring eNB to switch on one or more cells, previously reported as inactive due to energy saving reasons.<br>The procedure uses non UE-associated signalling.</p>
+<h3 id="elements-for-x2ap-communication">Elements for X2AP Communication</h3><p>abbr.</p>
+<h3 id="information-element-definitions">Information Element definitions</h3><p>The GTP Tunnel Endpoint IE identifies an X2 transport bearer or the S-GW endpoint of the S1 transport bearer associated to an E-RAB. It contains a Transport Layer Address and a GTP Tunnel Endpoint Identifier. The Transport Layer Address is an IP address to be used for the X2 user plane transport or for the S1 user plane transport.<br>The GTP Tunnel Endpoint Identifier is to be used for the user plane transport between eNB and the S-GW or between eNBs.</p>
 <h2 id="&#x95EE;&#x9898;">&#x95EE;&#x9898;</h2><blockquote>
 <p>&#x4F5C;&#x8005;&#x5728;&#x95EE;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x6216;&#x8005;&#x4F5C;&#x8005;&#x60F3;&#x8981;&#x89E3;&#x51B3;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
 </blockquote>
@@ -369,7 +384,7 @@ S1AP相关信息。 Services, Functions, Procedures, Elements etc.">
 <h2 id="&#x786E;&#x5B9A;&#x95EE;&#x9898;">&#x786E;&#x5B9A;&#x95EE;&#x9898;</h2><blockquote>
 <p>&#x786E;&#x5B9A;&#x4F5C;&#x8005;&#x5DF2;&#x7ECF;&#x89E3;&#x51B3;&#x4E86;&#x54EA;&#x4E9B;&#x95EE;&#x9898;&#xFF0C;&#x8FD8;&#x6709;&#x54EA;&#x4E9B;&#x95EE;&#x9898;&#x662F;&#x672A;&#x89E3;&#x51B3;&#x7684;&#x3002;&#x5728;&#x672A;&#x89E3;&#x51B3;&#x7684;&#x95EE;&#x9898;&#x4E2D;&#xFF0C;&#x54EA;&#x4E9B;&#x662F;&#x4F5C;&#x8005;&#x8BA4;&#x4E3A;&#x81EA;&#x5DF1;&#x65E0;&#x6CD5;&#x89E3;&#x51B3;&#x7684;&#x3002;</p>
 </blockquote>
-</span>
+
       
     </div>
 
@@ -417,12 +432,11 @@ S1AP相关信息。 Services, Functions, Procedures, Elements etc.">
   </div>
 
 
-        </div>
+          </div>
+          
 
-        
 
-
-        
+          
   <div class="comments" id="comments">
     
       <div class="ds-thread" data-thread-key="2015/12/10/36-423-X2AP/"
@@ -432,10 +446,9 @@ S1AP相关信息。 Services, Functions, Procedures, Elements etc.">
   </div>
 
 
-      </div>
-
-      
+        </div>
         
+          
   
   <div class="sidebar-toggle">
     <div class="sidebar-toggle-line-wrap">
@@ -463,10 +476,12 @@ S1AP相关信息。 Services, Functions, Procedures, Elements etc.">
 
       <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" src="/images/loseblue.jpg" alt="loseblue" itemprop="image"/>
+          <img class="site-author-image" itemprop="image"
+               src="/images/loseblue.jpg"
+               alt="loseblue" />
           <p class="site-author-name" itemprop="name">loseblue</p>
+          <p class="site-description motion-element" itemprop="description"></p>
         </div>
-        <p class="site-description motion-element" itemprop="description"></p>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
@@ -533,7 +548,7 @@ S1AP相关信息。 Services, Functions, Procedures, Elements etc.">
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#书名"><span class="nav-text">书名</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第一阶段"><span class="nav-text">第一阶段</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#分类"><span class="nav-text">分类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#中心思想"><span class="nav-text">中心思想</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#提纲"><span class="nav-text">提纲</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Definitions, symbols and abbreviations"><span class="nav-text">Definitions, symbols and abbreviations</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#General"><span class="nav-text">General</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#X2AP services"><span class="nav-text">X2AP services</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#X2AP procedure modules"><span class="nav-text">X2AP procedure modules</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Parallel transactions"><span class="nav-text">Parallel transactions</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Services expected from signalling transport"><span class="nav-text">Services expected from signalling transport</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Functions of X2AP"><span class="nav-text">Functions of X2AP</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#X2AP procedures"><span class="nav-text">X2AP procedures</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Handover Preparation"><span class="nav-text">Handover Preparation</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#SN Status Transfer"><span class="nav-text">SN Status Transfer</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#UE Context Release"><span class="nav-text">UE Context Release</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Handover Cancel"><span class="nav-text">Handover Cancel</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Global Procedures"><span class="nav-text">Global Procedures</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Load Indication"><span class="nav-text">Load Indication</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Error Indication"><span class="nav-text">Error Indication</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#X2 Setup"><span class="nav-text">X2 Setup</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Reset"><span class="nav-text">Reset</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#eNB Configuration Update"><span class="nav-text">eNB Configuration Update</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Resource Status Reporting Initiation"><span class="nav-text">Resource Status Reporting Initiation</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Resource Status Reporting"><span class="nav-text">Resource Status Reporting</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Mobility Settings Change"><span class="nav-text">Mobility Settings Change</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Radio Link Failure Indication"><span class="nav-text">Radio Link Failure Indication</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Handover Report"><span class="nav-text">Handover Report</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Cell Activation"><span class="nav-text">Cell Activation</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Elements for X2AP Communication"><span class="nav-text">Elements for X2AP Communication</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Information Element definitions"><span class="nav-text">Information Element definitions</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#问题"><span class="nav-text">问题</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第二阶段"><span class="nav-text">第二阶段</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#关键字"><span class="nav-text">关键字</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#重要句子"><span class="nav-text">重要句子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#重新架构"><span class="nav-text">重新架构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#确定问题"><span class="nav-text">确定问题</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#书名"><span class="nav-text">书名</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第一阶段"><span class="nav-text">第一阶段</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#分类"><span class="nav-text">分类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#中心思想"><span class="nav-text">中心思想</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#提纲"><span class="nav-text">提纲</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#definitions-symbols-and-abbreviations"><span class="nav-text">Definitions, symbols and abbreviations</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#general"><span class="nav-text">General</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#x2ap-services"><span class="nav-text">X2AP services</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#x2ap-procedure-modules"><span class="nav-text">X2AP procedure modules</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#parallel-transactions"><span class="nav-text">Parallel transactions</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#services-expected-from-signalling-transport"><span class="nav-text">Services expected from signalling transport</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#functions-of-x2ap"><span class="nav-text">Functions of X2AP</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#x2ap-procedures"><span class="nav-text">X2AP procedures</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#handover-preparation"><span class="nav-text">Handover Preparation</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#sn-status-transfer"><span class="nav-text">SN Status Transfer</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ue-context-release"><span class="nav-text">UE Context Release</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#handover-cancel"><span class="nav-text">Handover Cancel</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#global-procedures"><span class="nav-text">Global Procedures</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#load-indication"><span class="nav-text">Load Indication</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#error-indication"><span class="nav-text">Error Indication</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#x2-setup"><span class="nav-text">X2 Setup</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#reset"><span class="nav-text">Reset</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#enb-configuration-update"><span class="nav-text">eNB Configuration Update</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#resource-status-reporting-initiation"><span class="nav-text">Resource Status Reporting Initiation</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#resource-status-reporting"><span class="nav-text">Resource Status Reporting</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#mobility-settings-change"><span class="nav-text">Mobility Settings Change</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#radio-link-failure-indication"><span class="nav-text">Radio Link Failure Indication</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#handover-report"><span class="nav-text">Handover Report</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#cell-activation"><span class="nav-text">Cell Activation</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#elements-for-x2ap-communication"><span class="nav-text">Elements for X2AP Communication</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#information-element-definitions"><span class="nav-text">Information Element definitions</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#问题"><span class="nav-text">问题</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第二阶段"><span class="nav-text">第二阶段</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#关键字"><span class="nav-text">关键字</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#重要句子"><span class="nav-text">重要句子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#重新架构"><span class="nav-text">重新架构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#确定问题"><span class="nav-text">确定问题</span></a></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
@@ -546,7 +561,8 @@ S1AP相关信息。 Services, Functions, Procedures, Elements etc.">
   </aside>
 
 
-      
+        
+      </div>
     </main>
 
     <footer id="footer" class="footer">
@@ -568,7 +584,7 @@ S1AP相关信息。 Services, Functions, Procedures, Elements etc.">
 <div class="theme-info">
   主題 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT
+    NexT.Pisces
   </a>
 </div>
 
@@ -580,56 +596,48 @@ S1AP相关信息。 Services, Functions, Procedures, Elements etc.">
     <div class="back-to-top"></div>
   </div>
 
+  
+
+
+  
+
+
+
   <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
 
-  
-  
-
-  
-    
-
-  
-    
-  
-
-  <script type="text/javascript">
-    var duoshuoQuery = {short_name:"loseblue"};
-    (function() {
-      var ds = document.createElement('script');
-      ds.type = 'text/javascript';ds.async = true;
-      ds.id = 'duoshuo-script';
-      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-      ds.charset = 'UTF-8';
-      (document.getElementsByTagName('head')[0]
-      || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-  </script>
-    
-     
-
-
-    
-  
-
-  
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
-  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.2"></script>
-
-
-  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.2"></script>
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
-<script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
-
-<script type="text/javascript" src="/js/motion.js?v=0.4.5.2" id="motion.global"></script>
-
-
   <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
   <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
-  
-  
-<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.2" id="bootstrap.scrollspy.custom"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
 
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.0"></script>
+
+
+
+  
+  
+<script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.0"></script>
 
 <script type="text/javascript" id="sidebar.toc.highlight">
   $(document).ready(function () {
@@ -763,7 +771,7 @@ S1AP相关信息。 Services, Functions, Procedures, Elements etc.">
 
     $('.post-toc a').on('click', function (e) {
       e.preventDefault();
-      var targetSelector = escapeSelector(this.getAttribute('href'));
+      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
       var offset = $(targetSelector).offset().top;
       hasVelocity ?
         html.velocity('stop').velocity('scroll', {
@@ -776,11 +784,12 @@ S1AP相关信息。 Services, Functions, Procedures, Elements etc.">
     });
 
     // Expand sidebar on post detail page by default, when post has a toc.
-    motionMiddleWares.sidebar = function () {
+    NexT.motion.middleWares.sidebar = function () {
       var $tocContent = $('.post-toc-content');
+
       if (CONFIG.sidebar === 'post') {
         if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
-          displaySidebar();
+          NexT.utils.displaySidebar();
         }
       }
     };
@@ -789,13 +798,46 @@ S1AP相关信息。 Services, Functions, Procedures, Elements etc.">
 
 
 
-  <script type="text/javascript" src="/js/bootstrap.js"></script>
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"loseblue"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+  
+
+
+
+
 
   
   
 
   
   
+
 
 </body>
 </html>

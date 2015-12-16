@@ -1,5 +1,11 @@
 <!doctype html>
-<html class="theme-next   use-motion ">
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -32,7 +38,7 @@
 
 <link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.0.0" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="LTE,S1AP," />
@@ -46,7 +52,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.0" />
 
 
 
@@ -79,10 +85,16 @@
 
 
 <script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
   var CONFIG = {
-    scheme: '',
-    sidebar: 'always',
-    motion: true
+    scheme: 'Pisces',
+    sidebar: '[object Object]',
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
   };
 </script>
 
@@ -91,15 +103,6 @@
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
-  <!--[if lte IE 8]>
-  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
-    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
-           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
-           style='margin-left:auto;margin-right:auto;display: block;'/>
-    </a>
-  </div>
-<![endif]-->
   
 
 
@@ -107,7 +110,12 @@
 
 
 
-  <div class="container one-column page-post-detail">
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -171,6 +179,7 @@
 
       
       
+      
     </ul>
   
 
@@ -182,8 +191,9 @@
 
     <main id="main" class="main">
       <div class="main-inner">
-        <div id="content" class="content">
-          
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
 
   <div id="posts" class="posts-expand">
     
@@ -214,7 +224,10 @@
 
         <div class="post-meta">
           <span class="post-time">
-            發表於
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">發表於</span>
             <time itemprop="dateCreated" datetime="2015-11-25T15:17:02+08:00" content="11-25-2015">
               11-25-2015
             </time>
@@ -235,18 +248,20 @@
 
           
 
+          
+          
         </div>
       </header>
     
 
 
-    <div class="post-body">
+    <div class="post-body" itemprop="articleBody">
 
       
       
 
       
-        <span itemprop="articleBody"><h1 id="&#x4E66;&#x540D;">&#x4E66;&#x540D;</h1><p>3GPP TS 36.413  V9.8.0 S1 Application Protocol (S1AP)</p>
+        <h1 id="&#x4E66;&#x540D;">&#x4E66;&#x540D;</h1><p>3GPP TS 36.413  V9.8.0 S1 Application Protocol (S1AP)</p>
 <h1 id="&#x7B2C;&#x4E00;&#x9636;&#x6BB5;">&#x7B2C;&#x4E00;&#x9636;&#x6BB5;</h1><h2 id="&#x5206;&#x7C7B;">&#x5206;&#x7C7B;</h2><blockquote>
 <p>&#x786E;&#x5B9A;&#x4E66;&#x7684;&#x79CD;&#x7C7B;&#x548C;&#x5206;&#x7C7B;</p>
 </blockquote>
@@ -259,7 +274,7 @@
 <h2 id="&#x63D0;&#x7EB2;">&#x63D0;&#x7EB2;</h2><blockquote>
 <p>&#x6309;&#x7167;&#x987A;&#x5E8F;&#x4E0E;&#x5173;&#x7CFB;&#xFF0C;&#x5217;&#x51FA;&#x5168;&#x4E66;&#x7684;&#x91CD;&#x8981;&#x90E8;&#x5206;&#x3002;&#x5C06;&#x5168;&#x4E66;&#x7684;&#x7EB2;&#x8981;&#x62DF;&#x51FA;&#x6765;&#x4E4B;&#x540E;&#xFF0C;&#x518D;&#x5C06;&#x5404;&#x90E8;&#x5206;&#x7684;&#x7EB2;&#x8981;&#x4E5F;&#x4E00;&#x4E00;&#x5217;&#x51FA;&#x3002;</p>
 </blockquote>
-<h3 id="S1AP Services">S1AP Services</h3><h3 id="S1AP General">S1AP General</h3><h3 id="Functions of S1AP">Functions of S1AP</h3><h3 id="S1AP Procedures">S1AP Procedures</h3><ol>
+<h3 id="s1ap-services">S1AP Services</h3><h3 id="s1ap-general">S1AP General</h3><h3 id="functions-of-s1ap">Functions of S1AP</h3><h3 id="s1ap-procedures">S1AP Procedures</h3><ol>
 <li><p>E-RAB management function</p>
 <ol>
 <li>E-RAB Setup<br>The purpose of the E-RAB Setup procedure is to assign resources on Uu and S1 for one or several E-RABs and to setup corresponding Data Radio Bearers for a given UE. The procedure uses UE-associated signalling.</li>
@@ -332,7 +347,7 @@
 <li>MME Configuration Transfer<br>The purpose of the MME Configuration Transfer procedure is to transfer RAN configuration information from the MME to the eNB in unacknowledged mode.<br>This procedure uses non-UE associated signalling.</li>
 <li>LPPa transport<br>The purpose of the LPPa Transport procedure is to carry LPPa signalling between eNB and E-SMLC over the S1 Interface. The procedure may use UE-associated signalling or non-UE associated signalling. The UE-associated signalling is used to support E-CID positioning of a specific UE. The non-UE associated signalling is used to obtain assistance data from an eNodeB to support OTDOA positioning for any UE.</li>
 </ol>
-<h3 id="Elements for S1AP Communication">Elements for S1AP Communication</h3><ol>
+<h3 id="elements-for-s1ap-communication">Elements for S1AP Communication</h3><ol>
 <li>Message Functional Definition and Content</li>
 <li>Information Element Definitions</li>
 <li>Message and Information Element Abstract Syntax (with ASN.1)<br>a sending entity shall construct a S1AP message according to the PDU definitions module and with the following additional rules:<ul>
@@ -341,7 +356,7 @@
 </ul>
 </li>
 </ol>
-<h3 id="Handling of Unknown, Unforeseen and Erroneous Protocol Data">Handling of Unknown, Unforeseen and Erroneous Protocol Data</h3><p>Protocol Error cases can be divided into three classes:</p>
+<h3 id="handling-of-unknown-unforeseen-and-erroneous-protocol-data">Handling of Unknown, Unforeseen and Erroneous Protocol Data</h3><p>Protocol Error cases can be divided into three classes:</p>
 <ul>
 <li>Transfer Syntax Error.</li>
 <li>Abstract Syntax Error.</li>
@@ -377,7 +392,7 @@
 <h2 id="&#x786E;&#x5B9A;&#x95EE;&#x9898;">&#x786E;&#x5B9A;&#x95EE;&#x9898;</h2><blockquote>
 <p>&#x786E;&#x5B9A;&#x4F5C;&#x8005;&#x5DF2;&#x7ECF;&#x89E3;&#x51B3;&#x4E86;&#x54EA;&#x4E9B;&#x95EE;&#x9898;&#xFF0C;&#x8FD8;&#x6709;&#x54EA;&#x4E9B;&#x95EE;&#x9898;&#x662F;&#x672A;&#x89E3;&#x51B3;&#x7684;&#x3002;&#x5728;&#x672A;&#x89E3;&#x51B3;&#x7684;&#x95EE;&#x9898;&#x4E2D;&#xFF0C;&#x54EA;&#x4E9B;&#x662F;&#x4F5C;&#x8005;&#x8BA4;&#x4E3A;&#x81EA;&#x5DF1;&#x65E0;&#x6CD5;&#x89E3;&#x51B3;&#x7684;&#x3002;</p>
 </blockquote>
-</span>
+
       
     </div>
 
@@ -425,12 +440,11 @@
   </div>
 
 
-        </div>
+          </div>
+          
 
-        
 
-
-        
+          
   <div class="comments" id="comments">
     
       <div class="ds-thread" data-thread-key="2015/11/25/36-413-S1AP/"
@@ -440,10 +454,9 @@
   </div>
 
 
-      </div>
-
-      
+        </div>
         
+          
   
   <div class="sidebar-toggle">
     <div class="sidebar-toggle-line-wrap">
@@ -471,10 +484,12 @@
 
       <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" src="/images/loseblue.jpg" alt="loseblue" itemprop="image"/>
+          <img class="site-author-image" itemprop="image"
+               src="/images/loseblue.jpg"
+               alt="loseblue" />
           <p class="site-author-name" itemprop="name">loseblue</p>
+          <p class="site-description motion-element" itemprop="description"></p>
         </div>
-        <p class="site-description motion-element" itemprop="description"></p>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
@@ -541,7 +556,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#书名"><span class="nav-text">书名</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第一阶段"><span class="nav-text">第一阶段</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#分类"><span class="nav-text">分类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#中心思想"><span class="nav-text">中心思想</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#提纲"><span class="nav-text">提纲</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#S1AP Services"><span class="nav-text">S1AP Services</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#S1AP General"><span class="nav-text">S1AP General</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Functions of S1AP"><span class="nav-text">Functions of S1AP</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#S1AP Procedures"><span class="nav-text">S1AP Procedures</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Elements for S1AP Communication"><span class="nav-text">Elements for S1AP Communication</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Handling of Unknown, Unforeseen and Erroneous Protocol Data"><span class="nav-text">Handling of Unknown, Unforeseen and Erroneous Protocol Data</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#问题"><span class="nav-text">问题</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第二阶段"><span class="nav-text">第二阶段</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#关键字"><span class="nav-text">关键字</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#重要句子"><span class="nav-text">重要句子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#重新架构"><span class="nav-text">重新架构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#确定问题"><span class="nav-text">确定问题</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#书名"><span class="nav-text">书名</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第一阶段"><span class="nav-text">第一阶段</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#分类"><span class="nav-text">分类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#中心思想"><span class="nav-text">中心思想</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#提纲"><span class="nav-text">提纲</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#s1ap-services"><span class="nav-text">S1AP Services</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#s1ap-general"><span class="nav-text">S1AP General</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#functions-of-s1ap"><span class="nav-text">Functions of S1AP</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#s1ap-procedures"><span class="nav-text">S1AP Procedures</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#elements-for-s1ap-communication"><span class="nav-text">Elements for S1AP Communication</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#handling-of-unknown-unforeseen-and-erroneous-protocol-data"><span class="nav-text">Handling of Unknown, Unforeseen and Erroneous Protocol Data</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#问题"><span class="nav-text">问题</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第二阶段"><span class="nav-text">第二阶段</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#关键字"><span class="nav-text">关键字</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#重要句子"><span class="nav-text">重要句子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#重新架构"><span class="nav-text">重新架构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#确定问题"><span class="nav-text">确定问题</span></a></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
@@ -554,7 +569,8 @@
   </aside>
 
 
-      
+        
+      </div>
     </main>
 
     <footer id="footer" class="footer">
@@ -576,7 +592,7 @@
 <div class="theme-info">
   主題 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT
+    NexT.Pisces
   </a>
 </div>
 
@@ -588,56 +604,48 @@
     <div class="back-to-top"></div>
   </div>
 
+  
+
+
+  
+
+
+
   <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
 
-  
-  
-
-  
-    
-
-  
-    
-  
-
-  <script type="text/javascript">
-    var duoshuoQuery = {short_name:"loseblue"};
-    (function() {
-      var ds = document.createElement('script');
-      ds.type = 'text/javascript';ds.async = true;
-      ds.id = 'duoshuo-script';
-      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-      ds.charset = 'UTF-8';
-      (document.getElementsByTagName('head')[0]
-      || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-  </script>
-    
-     
-
-
-    
-  
-
-  
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
-  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.2"></script>
-
-
-  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.2"></script>
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
-<script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
-
-<script type="text/javascript" src="/js/motion.js?v=0.4.5.2" id="motion.global"></script>
-
-
   <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
   <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
-  
-  
-<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.2" id="bootstrap.scrollspy.custom"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
 
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.0"></script>
+
+
+
+  
+  
+<script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.0"></script>
 
 <script type="text/javascript" id="sidebar.toc.highlight">
   $(document).ready(function () {
@@ -771,7 +779,7 @@
 
     $('.post-toc a').on('click', function (e) {
       e.preventDefault();
-      var targetSelector = escapeSelector(this.getAttribute('href'));
+      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
       var offset = $(targetSelector).offset().top;
       hasVelocity ?
         html.velocity('stop').velocity('scroll', {
@@ -784,11 +792,12 @@
     });
 
     // Expand sidebar on post detail page by default, when post has a toc.
-    motionMiddleWares.sidebar = function () {
+    NexT.motion.middleWares.sidebar = function () {
       var $tocContent = $('.post-toc-content');
+
       if (CONFIG.sidebar === 'post') {
         if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
-          displaySidebar();
+          NexT.utils.displaySidebar();
         }
       }
     };
@@ -797,13 +806,46 @@
 
 
 
-  <script type="text/javascript" src="/js/bootstrap.js"></script>
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"loseblue"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+  
+
+
+
+
 
   
   
 
   
   
+
 
 </body>
 </html>
