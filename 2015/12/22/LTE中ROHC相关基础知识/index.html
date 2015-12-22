@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=5.0.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="hexo," />
+  <meta name="keywords" content="LTE ROHC," />
 
 
 
@@ -59,20 +59,16 @@
 
 
 
-<meta name="description" content="this is a test for depoly to github.
-this is a test for plantuml">
+<meta name="description" content="ROCH定义ROHC robust header compression">
 <meta property="og:type" content="article">
-<meta property="og:title" content="test 3">
-<meta property="og:url" content="http://yoursite.com/2015/08/19/test-3/index.html">
+<meta property="og:title" content="LTE中ROHC相关基础知识">
+<meta property="og:url" content="http://yoursite.com/2015/12/22/LTE中ROHC相关基础知识/index.html">
 <meta property="og:site_name" content="loseblue's blog">
-<meta property="og:description" content="this is a test for depoly to github.
-this is a test for plantuml">
-<meta property="og:image" content="http://www.plantuml.com/plantuml/svg/Syp9J4vLqBLJSCfFib9mB2t9ICqhoKnEBCdCprC8IYqiJIqkuGBAAUW2rJY256DHLLoGdrUSokM8QbPUFb1PaK8YTZCXYcrqTI6g4t6fXfWD0000">
-<meta property="og:updated_time" content="2015-12-01T06:41:22.000Z">
+<meta property="og:description" content="ROCH定义ROHC robust header compression">
+<meta property="og:updated_time" content="2015-12-22T08:34:30.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="test 3">
-<meta name="twitter:description" content="this is a test for depoly to github.
-this is a test for plantuml">
+<meta name="twitter:title" content="LTE中ROHC相关基础知识">
+<meta name="twitter:description" content="ROCH定义ROHC robust header compression">
 
 
 
@@ -90,7 +86,7 @@ this is a test for plantuml">
   };
 </script>
 
-  <title> test 3 | loseblue's blog </title>
+  <title> LTE中ROHC相关基础知识 | loseblue's blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
@@ -208,7 +204,7 @@ this is a test for plantuml">
             
             
               
-                test 3
+                LTE中ROHC相关基础知识
               
             
           </h1>
@@ -220,8 +216,8 @@ this is a test for plantuml">
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">發表於</span>
-            <time itemprop="dateCreated" datetime="2015-08-19T14:16:36+08:00" content="08-19-2015">
-              08-19-2015
+            <time itemprop="dateCreated" datetime="2015-12-22T16:32:28+08:00" content="12-22-2015">
+              12-22-2015
             </time>
           </span>
 
@@ -231,8 +227,8 @@ this is a test for plantuml">
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2015/08/19/test-3/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/08/19/test-3/" itemprop="commentsCount"></span>
+                <a href="/2015/12/22/LTE中ROHC相关基础知识/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/12/22/LTE中ROHC相关基础知识/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -253,9 +249,99 @@ this is a test for plantuml">
       
 
       
-        <p>this is a test for depoly to github.</p>
-<p>this is a test for plantuml</p>
-<img src="http://www.plantuml.com/plantuml/svg/Syp9J4vLqBLJSCfFib9mB2t9ICqhoKnEBCdCprC8IYqiJIqkuGBAAUW2rJY256DHLLoGdrUSokM8QbPUFb1PaK8YTZCXYcrqTI6g4t6fXfWD0000">
+        <h2 id="roch&#x5B9A;&#x4E49;">ROCH&#x5B9A;&#x4E49;</h2><p><strong>ROHC</strong> robust header compression</p>
+<a id="more"></a>
+<h2 id="3gpp&#x4F7F;&#x7528;&#x7684;rohc">3GPP&#x4F7F;&#x7528;&#x7684;ROHC</h2><p>3GPP LTE 36.323&#x5BF9;PDCP&#x5B50;&#x5C42;&#x7684;&#x89C4;&#x8303;&#x4E2D;, &#x4F7F;&#x7528;&#x4E86;RFC3095, RFC3843, RFC4995, RFC4996, RFC4815, RFC5225</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x6807;&#x793A;&#x503C;</th>
+<th style="text-align:left">&#x5305;&#x5934;&#x538B;&#x7F29;</th>
+<th style="text-align:left">&#x534F;&#x8BAE;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">0x000</td>
+<td style="text-align:left">&#x65E0;&#x538B;&#x7F29;</td>
+<td style="text-align:left">RFC4995</td>
+</tr>
+<tr>
+<td style="text-align:left">0x001</td>
+<td style="text-align:left">RTP/UDP/IP</td>
+<td style="text-align:left">RFC3095, RFC4815</td>
+</tr>
+<tr>
+<td style="text-align:left">0x002</td>
+<td style="text-align:left">UDP/IP</td>
+<td style="text-align:left">RFC3095, RFC4815</td>
+</tr>
+<tr>
+<td style="text-align:left">0x003</td>
+<td style="text-align:left">ESP/IP</td>
+<td style="text-align:left">RFC3095, RFC4815</td>
+</tr>
+<tr>
+<td style="text-align:left">0x004</td>
+<td style="text-align:left">IP</td>
+<td style="text-align:left">RFC3843, RFC4815</td>
+</tr>
+<tr>
+<td style="text-align:left">0x006</td>
+<td style="text-align:left">TCP/IP</td>
+<td style="text-align:left">RFC4996</td>
+</tr>
+<tr>
+<td style="text-align:left">0x101</td>
+<td style="text-align:left">RTP/UDP/IP</td>
+<td style="text-align:left">RFC5225</td>
+</tr>
+<tr>
+<td style="text-align:left">0x102</td>
+<td style="text-align:left">UDP/IP</td>
+<td style="text-align:left">RFC5225</td>
+</tr>
+<tr>
+<td style="text-align:left">0x103</td>
+<td style="text-align:left">ESP/IIP</td>
+<td style="text-align:left">RFC5225</td>
+</tr>
+<tr>
+<td style="text-align:left">0x104</td>
+<td style="text-align:left">IP</td>
+<td style="text-align:left">RFC5225</td>
+</tr>
+</tbody>
+</table>
+<h2 id="rohc&#x72B6;&#x6001;">ROHC&#x72B6;&#x6001;</h2><h3 id="rohc&#x538B;&#x7F29;&#x72B6;&#x6001;">ROHC&#x538B;&#x7F29;&#x72B6;&#x6001;</h3><ul>
+<li><strong>IR</strong> (initiation adn refresh state)<br>&#x538B;&#x7F29;&#x65B9;&#x8FDE;&#x7EED;&#x53D1;&#x9001;&#x5168;&#x90E8;IP&#x5934;&#x4FE1;&#x606F;&#x548C;&#x6D41;&#x5173;&#x8054;&#x6807;&#x8BC6;&#x7B26;(PID&#x548C;CID)</li>
+<li><strong>FO</strong> (first order)<br>&#x538B;&#x7F29;&#x65B9;&#x4EC5;&#x4F20;&#x9012;&#x5B8C;&#x6574;&#x7684;&#x52A8;&#x6001;&#x4FE1;&#x5934;&#x57DF;&#x4FE1;&#x606F;</li>
+<li><strong>SO</strong> (second order)<br>&#x538B;&#x7F29;&#x65B9;&#x6839;&#x636E;&#x52A8;&#x6001;&#x57DF;&#x53D8;&#x5316;&#x89C4;&#x5F8B;, &#x4EC5;&#x4F20;&#x9012;&#x52A8;&#x6001;&#x57DF;&#x7684;&#x538B;&#x7F29;&#x503C;, &#x6B64;&#x65F6;&#x53D1;&#x9001;&#x538B;&#x7F29;&#x7387;&#x6700;&#x9AD8;&#x7684;&#x538B;&#x7F29;&#x5206;&#x7EC4;</li>
+</ul>
+<h3 id="rohc&#x89E3;&#x538B;&#x7F29;&#x72B6;&#x6001;">ROHC&#x89E3;&#x538B;&#x7F29;&#x72B6;&#x6001;</h3><ul>
+<li><strong>NC</strong> (no context)<br>&#x89E3;&#x538B;&#x65B9;&#x6CA1;&#x6709;IP&#x4FE1;&#x4E49;&#x9759;&#x6001;&#x548C;&#x52A8;&#x6001;&#x57DF;&#x4FE1;&#x606F;, &#x9700;&#x8981;&#x538B;&#x7F29;&#x65B9;&#x5728;IR&#x72B6;&#x6001;&#x53D1;&#x9001;&#x5305;&#x542B;&#x5B8C;&#x6574;&#x4FE1;&#x5934;&#x7684;&#x5206;&#x7EC4;.</li>
+<li><strong>SC</strong> (static context)<br>&#x89E3;&#x538B;&#x65B9;&#x83B7;&#x5F97;&#x4E86;&#x8DB3;&#x591F;&#x7684;&#x9759;&#x6001;&#x57DF;&#x4FE1;&#x606F;, &#x4E0E;&#x538B;&#x7F29;&#x65B9;&#x7684;FO&#x72B6;&#x6001;&#x76F8;&#x5BF9;&#x5E94;, &#x5E0C;&#x671B;&#x63A5;&#x6536;&#x5230;&#x5305;&#x542B;&#x5B8C;&#x6574;&#x52A8;&#x6001;&#x4FE1;&#x5934;&#x7684;ROHC&#x538B;&#x7F29;&#x5206;&#x7EC4;.</li>
+<li><strong>FC</strong> (full contest)<br>&#x89E3;&#x538B;&#x65B9;&#x83B7;&#x5F97;&#x4E86;&#x8DB3;&#x591F;&#x7684;&#x9759;&#x6001;&#x57DF;&#x4FE1;&#x606F;&#x548C;&#x52A8;&#x6001;&#x57DF;&#x7684;&#x53D8;&#x5316;&#x89C4;&#x5F8B;&#x4FE1;&#x606F;&#x65F6;&#x6240;&#x5904;&#x7684;&#x72B6;&#x6001;, &#x4E0E;&#x538B;&#x7F29;&#x65B9;SO&#x72B6;&#x6001;&#x76F8;&#x5BF9;&#x5E94;, &#x80FD;&#x591F;&#x63A5;&#x6536;&#x538B;&#x7F29;&#x65B9;&#x5728;SO&#x72B6;&#x6001;&#x6240;&#x53D1;&#x9001;&#x7684;ROHC&#x538B;&#x7F29;&#x5206;&#x7EC4;.</li>
+</ul>
+<p>&#x89E3;&#x538B;&#x5F00;&#x59CB;&#x5728;NC&#x72B6;&#x6001;, &#x6210;&#x529F;&#x89E3;&#x538B;&#x4E00;&#x4E2A;ROHC&#x5305;&#x8FDB;&#x5165;FC&#x72B6;&#x6001;, &#x5728;FC&#x72B6;&#x6001;&#x8FDE;&#x7EED;K1&#x4E2A;&#x5305;&#x89E3;&#x538B;&#x5931;&#x8D25;&#x8FDB;&#x5165;SC&#x72B6;&#x6001;.  SC&#x72B6;&#x6001;&#x4E0B;&#x6210;&#x529F;&#x89E3;&#x538B;&#x4E00;&#x4E2A;ROHC&#x5305;&#x8FDB;&#x5165;FC&#x72B6;&#x6001;, &#x8FDE;&#x7EED;K2&#x4E2A;&#x5305;&#x89E3;&#x538B;&#x5931;&#x8D25;&#x8FDB;&#x5165;NC&#x72B6;&#x6001;.  K1=K2=3&#x65F6;&#x6027;&#x80FD;&#x6700;&#x4F18;.</p>
+<h2 id="rohc&#x5DE5;&#x4F5C;&#x6A21;&#x5F0F;">ROHC&#x5DE5;&#x4F5C;&#x6A21;&#x5F0F;</h2><ul>
+<li><strong>&#x5355;&#x5411;(uni-direcfional)U&#x6A21;</strong><br>&#x5F53;&#x4E0D;&#x5B58;&#x5728;&#x6216;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;&#x53CD;&#x9988;&#x4FE1;&#x9053;&#x65F6;, ROHC&#x5DE5;&#x4F5C;&#x5728;U&#x6A21;&#x5F0F;, &#x6B64;&#x65F6;&#x89E3;&#x538B;&#x65B9;&#x4E0D;&#x80FD;&#x5411;&#x538B;&#x7F29;&#x65B9;&#x53D1;&#x9001;&#x53CD;&#x9988;&#x4FE1;&#x606F;. &#x4E3A;&#x4FDD;&#x8BC1;&#x538B;&#x7F29;&#x5065;&#x58EE;&#x6027;&#x548C;&#x538B;&#x7F29;&#x7387;, &#x538B;&#x7F29;&#x65B9;&#x91C7;&#x7528;&#x4E50;&#x89C2;&#x903C;&#x8FD1;&#x539F;&#x5219;&#x548C;&#x5468;&#x671F;&#x6027;&#x539F;&#x5219;&#x8FDB;&#x884C;&#x72B6;&#x6001;&#x8F6C;&#x79FB;.<ul>
+<li>&#x4E50;&#x89C2;&#x903C;&#x8FD1;&#x539F;&#x5219;: &#x5728;IR&#x72B6;&#x6001;&#x6216;FO&#x72B6;&#x6001;&#x65F6;, &#x538B;&#x7F29;&#x65B9;&#x5411;&#x89E3;&#x538B;&#x65B9;&#x8FDE;&#x7EED;&#x53D1;&#x9001;n&#x4E2A;&#x5206;&#x7EC4;&#x65F6;&#x5C31;&#x8BA4;&#x4E3A;&#x89E3;&#x538B;&#x65B9;&#x5EFA;&#x7ACB;&#x4E86;&#x6B63;&#x786E;&#x7684;&#x89E3;&#x538B;&#x6587;&#x666F;, &#x4E8E;&#x662F;&#x5411;&#x9AD8;&#x7EA7;FO, SO&#x72B6;&#x6001;&#x8F6C;&#x79FB;.</li>
+<li>&#x5468;&#x671F;&#x6027;&#x539F;&#x5219;: &#x538B;&#x7F29;&#x65B9;&#x5728;FO, SO&#x72B6;&#x6001;&#x4E00;&#x5B9A;&#x65F6;&#x95F4;timeout&#x540E;, &#x5C31;&#x8F6C;&#x79FB;&#x5230;&#x4F4E;&#x7EA7;&#x538B;&#x7F29;&#x72B6;&#x6001;.</li>
+</ul>
+</li>
+</ul>
+<p>&#x6839;&#x636E;&#x4EFF;&#x771F;&#x5F97;&#x51FA;n=3, timeout=4s&#x65F6;&#x6027;&#x80FD;&#x6700;&#x4F18;.</p>
+<ul>
+<li><p><strong>&#x53CC;&#x5411;&#x4E50;&#x89C2;(bi-directional optimistic)O&#x6A21;&#x5F0F;</strong><br>&#x5F53;&#x65E0;&#x7EBF;&#x94FE;&#x8DEF;&#x5B58;&#x5728;&#x53EF;&#x4EE5;&#x5229;&#x7528;&#x7684;&#x53CD;&#x9988;&#x4FE1;&#x9053;&#x65F6;, ROHC&#x5DE5;&#x4F5C;&#x5728;O&#x6A21;&#x5F0F;, &#x538B;&#x7F29;&#x65B9;&#x5411;&#x9AD8;&#x7EA7;&#x72B6;&#x6001;&#x8F6C;&#x79FB;&#x91C7;&#x7528;&#x4E50;&#x89C2;&#x903C;&#x8FD1;&#x539F;&#x5219;&#x6216;&#x8005;&#x6B63;&#x53CD;&#x9988;&#x539F;&#x5219;, &#x5411;&#x4F4E;&#x7EA7;&#x72B6;&#x6001;&#x8F6C;&#x79FB;&#x91C7;&#x7528;&#x8D1F;&#x53CD;&#x9988;&#x539F;&#x5219;.</p>
+<ul>
+<li>&#x6B63;&#x53CD;&#x9988;&#x539F;&#x5219;: &#x5F53;&#x65E0;&#x7EBF;&#x94FE;&#x8DEF;&#x5141;&#x8BB8;&#x53D1;&#x9001;&#x53CD;&#x9988;&#x5206;&#x7EC4;&#x7684;&#x65F6;&#x5019;, &#x89E3;&#x538B;&#x65B9;&#x4E00;&#x65E6;&#x6B63;&#x786E;&#x89E3;&#x538B;&#x5177;&#x6709;&#x66F4;&#x65B0;&#x6587;&#x666F;&#x7279;&#x6027;&#x7684;&#x5206;&#x7EC4;&#x65F6;, &#x5C31;&#x5411;&#x538B;&#x7F29;&#x65B9;&#x53D1;&#x9001;&#x6B63;&#x53CD;&#x9988;&#x5206;&#x7EC4;, &#x5141;&#x8BB8;&#x538B;&#x7F29;&#x65B9;&#x5411;&#x9AD8;&#x7EA7;&#x538B;&#x7F29;&#x72B6;&#x6001;&#x8F6C;&#x79FB;.</li>
+<li>&#x8D1F;&#x53CD;&#x9988;&#x539F;&#x5219;: &#x5F53;&#x65E0;&#x7EBF;&#x94FE;&#x8DEF;&#x5141;&#x8BB8;&#x53D1;&#x9001;&#x53CD;&#x9988;&#x5206;&#x7EC4;&#x7684;&#x65F6;&#x5019;, &#x89E3;&#x538B;&#x65B9;&#x8FDE;&#x7EED;&#x9519;&#x8BEF;&#x5730;&#x89E3;&#x538B;ROHC&#x5206;&#x7EC4;&#x65F6;, &#x5C31;&#x8981;&#x5411;&#x538B;&#x7F29;&#x65B9;&#x53D1;&#x9001;&#x8D1F;&#x53CD;&#x9988;&#x5206;&#x7EC4;, &#x4FC3;&#x4F7F;&#x538B;&#x7F29;&#x65B9;&#x5411;&#x4F4E;&#x7EA7;&#x72B6;&#x6001;&#x8F6C;&#x79FB;, &#x5E76;&#x53D1;&#x9001;&#x5E26;&#x6709;&#x5B8C;&#x6574;&#x4FE1;&#x606F;&#x7684;&#x5206;&#x7EC4;, &#x4EE5;&#x4FBF;&#x89E3;&#x538B;&#x65B9;&#x63A5;&#x6536;&#x5230;&#x8FD9;&#x4E9B;&#x5206;&#x7EC4;&#x540E;&#x66F4;&#x65B0;&#x89E3;&#x538B;&#x6587;&#x666F;&#x4FE1;&#x606F;, &#x4FDD;&#x6301;&#x538B;&#x7F29;&#x548C;&#x89E3;&#x538B;&#x6587;&#x666F;&#x540C;&#x6B65;.</li>
+</ul>
+</li>
+<li><p><strong>&#x53CC;&#x5411;&#x53EF;&#x9760;(bi-directionalreliable)R&#x6A21;&#x5F0F;</strong><br>&#x5F53;&#x65E0;&#x7EBF;&#x94FE;&#x8DEF;&#x8D28;&#x91CF;&#x6BD4;&#x8F83;&#x597D;&#x7684;&#x65F6;&#x5019;, &#x72B6;&#x6001;&#x8F6C;&#x79FB;&#x5B8C;&#x5168;&#x91C7;&#x7528;&#x53CD;&#x9988;&#x539F;&#x5219;. &#x538B;&#x7F29;&#x65B9;&#x5411;&#x9AD8;&#x7EA7;&#x72B6;&#x6001;&#x8F6C;&#x79FB;&#x91C7;&#x7528;&#x6B63;&#x53CD;&#x9988;&#x539F;&#x5219;, &#x5411;&#x4F4E;&#x7EA7;&#x72B6;&#x6001;&#x8F6C;&#x79FB;&#x91C7;&#x7528;&#x8D1F;&#x53CD;&#x9988;&#x539F;&#x5219;.</p>
+</li>
+</ul>
 
       
     </div>
@@ -264,7 +350,7 @@ this is a test for plantuml">
       
         <div class="post-tags">
           
-            <a href="/tags/hexo/" rel="tag">#hexo</a>
+            <a href="/tags/LTE-ROHC/" rel="tag">#LTE ROHC</a>
           
         </div>
       
@@ -273,17 +359,13 @@ this is a test for plantuml">
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/08/18/first-test/" rel="next" title="first_test">
-                <i class="fa fa-chevron-left"></i> first_test
+              <a href="/2015/12/10/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2015/11/25/36-413-S1AP/" rel="prev" title="36.413 S1AP读书笔记">
-                36.413 S1AP读书笔记 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -309,8 +391,8 @@ this is a test for plantuml">
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2015/08/19/test-3/"
-           data-title="test 3" data-url="http://yoursite.com/2015/08/19/test-3/">
+      <div class="ds-thread" data-thread-key="2015/12/22/LTE中ROHC相关基础知识/"
+           data-title="LTE中ROHC相关基础知识" data-url="http://yoursite.com/2015/12/22/LTE中ROHC相关基础知识/">
       </div>
     
   </div>
@@ -418,7 +500,7 @@ this is a test for plantuml">
               
             
             
-              <p class="post-toc-empty">此文章未包含目錄</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#roch定义"><span class="nav-text">ROCH定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3gpp使用的rohc"><span class="nav-text">3GPP使用的ROHC</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#rohc状态"><span class="nav-text">ROHC状态</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#rohc压缩状态"><span class="nav-text">ROHC压缩状态</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#rohc解压缩状态"><span class="nav-text">ROHC解压缩状态</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#rohc工作模式"><span class="nav-text">ROHC工作模式</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
