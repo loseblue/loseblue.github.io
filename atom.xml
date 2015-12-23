@@ -446,15 +446,20 @@
     <link href="http://yoursite.com/2015/08/19/test-3/"/>
     <id>http://yoursite.com/2015/08/19/test-3/</id>
     <published>2015-08-19T06:16:36.000Z</published>
-    <updated>2015-12-01T06:41:22.000Z</updated>
+    <updated>2015-12-23T02:57:23.000Z</updated>
     <content type="html"><![CDATA[<p>this is a test for depoly to github.</p>
-<p>this is a test for plantuml</p>
+<h2 id="plantuml&#x63D2;&#x5165;">plantuml&#x63D2;&#x5165;</h2><p>this is a test for plantuml<br><figure class="highlight erlang-repl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">{<span class="comment">% plantuml %}</span></span><br><span class="line">    <span class="variable">Alice</span> <span class="arrow">-&gt;</span> <span class="variable">Bob</span>: <span class="variable">Authentication</span> <span class="variable">Request</span></span><br><span class="line">    <span class="variable">Bob</span> -<span class="arrow">-&gt;</span> <span class="variable">Alice</span>: <span class="variable">Authentication</span> <span class="variable">Response</span></span><br><span class="line">    <span class="variable">Alice</span> <span class="arrow">-&gt;</span> <span class="variable">Bob</span>: <span class="variable">Another</span> <span class="function_or_atom">authentication</span> <span class="variable">Request</span></span><br><span class="line">    <span class="variable">Alice</span> &lt;-- <span class="variable">Bob</span>: <span class="function_or_atom">another</span> <span class="function_or_atom">authentication</span> <span class="variable">Response</span></span><br><span class="line">{<span class="comment">% endplantuml %}</span></span><br></pre></td></tr></table></figure></p>
 <img src="http://www.plantuml.com/plantuml/svg/Syp9J4vLqBLJSCfFib9mB2t9ICqhoKnEBCdCprC8IYqiJIqkuGBAAUW2rJY256DHLLoGdrUSokM8QbPUFb1PaK8YTZCXYcrqTI6g4t6fXfWD0000">
+<p>##&#x56FE;&#x7247;&#x63D2;&#x5165;<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="link_label">&#x5934;&#x50CF;</span>](<span class="link_url">/images/losebluestatic_squar.jpg</span>)</span><br></pre></td></tr></table></figure></p>
+<p><img src="/images/losebluestatic_squar.jpg" alt="&#x5934;&#x50CF;"></p>
+<h2 id="&#x6B4C;&#x66F2;&#x63D2;&#x5165;">&#x6B4C;&#x66F2;&#x63D2;&#x5165;</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">center</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">iframe</span> <span class="attribute">frameborder</span>=<span class="value">&quot;no&quot;</span> <span class="attribute">border</span>=<span class="value">&quot;0&quot;</span> <span class="attribute">marginwidth</span>=<span class="value">&quot;0&quot;</span> <span class="attribute">marginheight</span>=<span class="value">&quot;0&quot;</span> <span class="attribute">width</span>=<span class="value">330</span> <span class="attribute">height</span>=<span class="value">86</span> </span><br><span class="line"><span class="attribute">src</span>=<span class="value">&quot;http://music.163.com/outchain/player?type=2&amp;id=25706282&amp;auto=0&amp;height=66&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">iframe</span>&gt;</span>	</span><br><span class="line"><span class="tag">&lt;/<span class="title">center</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<center><br><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&amp;id=25706282&amp;auto=0&amp;height=66"><br></iframe><br></center>
+
+
 ]]></content>
     <summary type="html">
     <![CDATA[<p>this is a test for depoly to github.</p>
-<p>this is a test for plantuml</p>
-<img src="http://www.plantuml.com/plantuml/svg/Syp9J4vLqBLJSC]]>
+<h2 id="plantuml&#x63D2;&#x5165;">plantuml&#x63D2;&#x5165;</h2><p>this is a test for plantuml<br]]>
     </summary>
     
       <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
